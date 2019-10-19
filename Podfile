@@ -8,6 +8,7 @@ target 'GitHubIssues' do
   # Pods for GitHubIssues
   pod 'Firebase/Analytics'
   pod 'Firebase/Auth'
+  pod 'Swinject'
 
   target 'GitHubIssuesTests' do
     inherit! :search_paths
