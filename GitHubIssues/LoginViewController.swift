@@ -15,10 +15,6 @@ class LoginViewController: UIViewController {
     var login: Login?
     private lazy var authState = AuthState();
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.setupDelegates()
@@ -45,6 +41,13 @@ class LoginViewController: UIViewController {
         self.loginButton.show()
     }
     
+    private func goToIssuesController() {
+        guard let issuesController = self.defaultContainer.resolve(IssuesViewController.self) else {
+            fatalError("There's no IssuesController to resolve.")
+        }
+        self.present(issuesController, animated: true, completion: nil)
+    }
+    
     @IBAction func handleLogin(_ sender: UIButton) {
         self.showActivityIndicator()
         self.login?.login()
@@ -57,7 +60,7 @@ extension LoginViewController: AuthStateDelegate {
         
         switch result {
         case .success(let user) where user != nil:
-            print("Já logado")
+            self.goToIssuesController()
         case .failure(let error):
             self.alert(error)
         case .success:
@@ -71,8 +74,8 @@ extension LoginViewController: LoginDelegate {
         self.hideActivityIndicator()
         
         switch result {
-        case .success(let user):
-            print(user)
+        case .success:
+            self.goToIssuesController()
         case .failure(let error):
             if case .userCancelledLogin = error { return }
             self.alert(error)
