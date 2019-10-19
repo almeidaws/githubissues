@@ -1,0 +1,40 @@
+//
+//  LoginModelError.swift
+//  GitHubIssues
+//
+//  Created by Gustavo Amaral on 19/10/19.
+//  Copyright © 2019 Gustavo Almeida Amaral. All rights reserved.
+//
+
+import Foundation
+
+enum LoginModelError: Error, LocalizedError, CustomStringConvertible, CustomDebugStringConvertible {
+    case firebase(Error)
+    case withoutCredential
+    case withoutAuthDataResult
+    case withoutName
+    case withoutEmail
+    
+    var description: String {
+        switch self {
+        case .firebase(let error):
+            return "An error with Firebase happened: \(error)."
+        case .withoutCredential:
+            return "There's no credential to perform login. That should be an impossible situation."
+        case .withoutAuthDataResult:
+            return "There's no AuthDataResult to continue the login flow."
+        case .withoutName:
+            return "The user hasn't a name."
+        case .withoutEmail:
+            return "The user hans't an e-mail."
+        }
+    }
+    
+    var errorDescription: String? {
+        return self.description
+    }
+        
+    var debugDescription: String {
+        return self.description
+    }
+}

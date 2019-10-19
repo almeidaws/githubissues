@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GBm-4W-RSE">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="0w8-xm-jAA">
+            <objects>
+                <viewController id="GBm-4W-RSE" customClass="LoginViewController" customModule="GitHubIssues" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Z71-G2-Abe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="CD3-mh-Kmw">
+                                <rect key="frame" x="188.5" y="515.5" width="37" height="37"/>
+                            </activityIndicatorView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="52" translatesAutoresizingMaskIntoConstraints="NO" id="xIM-7Y-HgF">
+                                <rect key="frame" x="41.5" y="343.5" width="331" height="209"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GitHub-Mark" translatesAutoresizingMaskIntoConstraints="NO" id="ZfH-ov-PX0">
+                                        <rect key="frame" x="104.5" y="0.0" width="122" height="120"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="ZfH-ov-PX0" secondAttribute="height" multiplier="60:59" id="iVx-sX-f2G"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kfc-KN-ced" customClass="RoundedLoginButton" customModule="GitHubIssues" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="172" width="331" height="37"/>
+                                        <color key="backgroundColor" red="0.090196078430000007" green="0.08235294118" blue="0.086274509799999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="23"/>
+                                        <state key="normal" title="Continue with GitHub">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="handleLogin:" destination="GBm-4W-RSE" eventType="touchUpInside" id="vjF-U5-E8t"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Kfc-KN-ced" secondAttribute="trailing" id="Nto-XJ-NDR"/>
+                                    <constraint firstItem="Kfc-KN-ced" firstAttribute="leading" secondItem="xIM-7Y-HgF" secondAttribute="leading" id="ml9-2l-BDc"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="xIM-7Y-HgF" firstAttribute="centerX" secondItem="Z71-G2-Abe" secondAttribute="centerX" id="4dR-TE-dox"/>
+                            <constraint firstItem="xIM-7Y-HgF" firstAttribute="centerY" secondItem="Z71-G2-Abe" secondAttribute="centerY" id="Fbp-M5-bb3"/>
+                            <constraint firstItem="CD3-mh-Kmw" firstAttribute="centerX" secondItem="Kfc-KN-ced" secondAttribute="centerX" id="Yb9-H1-jx5"/>
+                            <constraint firstItem="CD3-mh-Kmw" firstAttribute="width" secondItem="Kfc-KN-ced" secondAttribute="height" multiplier="1:1" id="evv-Gb-ICj"/>
+                            <constraint firstItem="CD3-mh-Kmw" firstAttribute="centerY" secondItem="Kfc-KN-ced" secondAttribute="centerY" id="fWH-64-EWX"/>
+                            <constraint firstItem="CD3-mh-Kmw" firstAttribute="height" secondItem="Kfc-KN-ced" secondAttribute="height" id="lCQ-37-Tv8"/>
+                            <constraint firstItem="xIM-7Y-HgF" firstAttribute="width" secondItem="R7C-xF-9AB" secondAttribute="width" multiplier="300/375" id="vTd-0z-3mx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="R7C-xF-9AB"/>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="CD3-mh-Kmw" id="HDa-Od-A0s"/>
+                        <outlet property="loginButton" destination="Kfc-KN-ced" id="Y9G-FC-L7N"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gcL-RY-mbb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="63.616071428571423"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="GitHub-Mark" width="120" height="120"/>
+    </resources>
+</document>

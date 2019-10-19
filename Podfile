@@ -6,6 +6,7 @@ target 'GitHubIssues' do
   use_frameworks!
 
   # Pods for GitHubIssues
+  pod 'Firebase/Analytics'
   pod 'Firebase/Auth'
 
   target 'GitHubIssuesTests' do
