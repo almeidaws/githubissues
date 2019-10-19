@@ -26,8 +26,6 @@
 		EC03E66A235BC9E300E6444A /* Injector.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC03E668235BC7E400E6444A /* Injector.swift */; };
 		EC03E66B235BC9E300E6444A /* Injector.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC03E668235BC7E400E6444A /* Injector.swift */; };
 		EC0F46F1235B89AC00B1E60B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0F46F0235B89AC00B1E60B /* AppDelegate.swift */; };
-		EC0F46F5235B89AC00B1E60B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0F46F4235B89AC00B1E60B /* ViewController.swift */; };
-		EC0F46F8235B89AC00B1E60B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC0F46F6235B89AC00B1E60B /* Main.storyboard */; };
 		EC0F46FA235B89AF00B1E60B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC0F46F9235B89AF00B1E60B /* Assets.xcassets */; };
 		EC0F46FD235B89AF00B1E60B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC0F46FB235B89AF00B1E60B /* LaunchScreen.storyboard */; };
 		EC0F4708235B89AF00B1E60B /* GitHubIssuesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0F4707235B89AF00B1E60B /* GitHubIssuesTests.swift */; };
@@ -69,8 +67,6 @@
 		EC03E668235BC7E400E6444A /* Injector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injector.swift; sourceTree = "<group>"; };
 		EC0F46ED235B89AC00B1E60B /* GitHub Issues.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GitHub Issues.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC0F46F0235B89AC00B1E60B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EC0F46F4235B89AC00B1E60B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EC0F46F7235B89AC00B1E60B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EC0F46F9235B89AF00B1E60B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC0F46FC235B89AF00B1E60B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC0F46FE235B89AF00B1E60B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -115,19 +111,9 @@
 		EC03E63D235B903500E6444A /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				EC03E63E235B904900E6444A /* Main */,
 				EC03E63F235B904E00E6444A /* Login */,
 			);
 			name = "View Controllers";
-			sourceTree = "<group>";
-		};
-		EC03E63E235B904900E6444A /* Main */ = {
-			isa = PBXGroup;
-			children = (
-				EC0F46F6235B89AC00B1E60B /* Main.storyboard */,
-				EC0F46F4235B89AC00B1E60B /* ViewController.swift */,
-			);
-			name = Main;
 			sourceTree = "<group>";
 		};
 		EC03E63F235B904E00E6444A /* Login */ = {
@@ -372,7 +358,6 @@
 				EC0F4713235B8CDD00B1E60B /* GoogleService-Info.plist in Resources */,
 				EC0F46FA235B89AF00B1E60B /* Assets.xcassets in Resources */,
 				EC03E644235B970100E6444A /* Login.storyboard in Resources */,
-				EC0F46F8235B89AC00B1E60B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,7 +445,6 @@
 				EC03E64D235B999500E6444A /* GitHubLogin.swift in Sources */,
 				EC03E647235B98CA00E6444A /* RoundedLoginButton.swift in Sources */,
 				EC03E656235B9DD700E6444A /* UIViewController+Alerts.swift in Sources */,
-				EC0F46F5235B89AC00B1E60B /* ViewController.swift in Sources */,
 				EC03E65A235BAAC200E6444A /* K.swift in Sources */,
 				EC03E64F235B99E900E6444A /* LoginModelError.swift in Sources */,
 				EC03E660235BBAB100E6444A /* AuthStateError.swift in Sources */,
@@ -494,14 +478,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		EC0F46F6235B89AC00B1E60B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EC0F46F7235B89AC00B1E60B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EC0F46FB235B89AF00B1E60B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
