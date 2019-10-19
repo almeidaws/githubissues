@@ -14,6 +14,7 @@ enum LoginModelError: Error, LocalizedError, CustomStringConvertible, CustomDebu
     case withoutAuthDataResult
     case withoutName
     case withoutEmail
+    case userCancelledLogin
     
     var description: String {
         switch self {
@@ -27,6 +28,8 @@ enum LoginModelError: Error, LocalizedError, CustomStringConvertible, CustomDebu
             return "The user hasn't a name."
         case .withoutEmail:
             return "The user hans't an e-mail."
+        case .userCancelledLogin:
+            return "The user has cancelled the login flow."
         }
     }
     

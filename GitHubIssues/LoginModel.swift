@@ -18,7 +18,11 @@ class LoginModel {
         provider.scopes = ["user:email"]
         provider.getCredentialWith(nil) { credential, error in
             if let error = error {
-                self.delegate?.loginModel(self, didLogin: .failure(.firebase(error)))
+                if error._code == K.Error.Code.useCancelledLogin {
+                    self.delegate?.loginModel(self, didLogin: .failure(.userCancelledLogin))
+                } else {
+                    self.delegate?.loginModel(self, didLogin: .failure(.firebase(error)))
+                }
                 return
             }
             

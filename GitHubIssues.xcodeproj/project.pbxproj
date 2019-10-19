@@ -18,6 +18,7 @@
 		EC03E653235B9A9A00E6444A /* GitHubUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC03E652235B9A9A00E6444A /* GitHubUser.swift */; };
 		EC03E656235B9DD700E6444A /* UIViewController+Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC03E655235B9DD700E6444A /* UIViewController+Alerts.swift */; };
 		EC03E658235BA54C00E6444A /* UIView+ShowHide.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC03E657235BA54C00E6444A /* UIView+ShowHide.swift */; };
+		EC03E65A235BAAC200E6444A /* K.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC03E659235BAAC200E6444A /* K.swift */; };
 		EC0F46F1235B89AC00B1E60B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0F46F0235B89AC00B1E60B /* AppDelegate.swift */; };
 		EC0F46F3235B89AC00B1E60B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0F46F2235B89AC00B1E60B /* SceneDelegate.swift */; };
 		EC0F46F5235B89AC00B1E60B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0F46F4235B89AC00B1E60B /* ViewController.swift */; };
@@ -55,6 +56,7 @@
 		EC03E652235B9A9A00E6444A /* GitHubUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubUser.swift; sourceTree = "<group>"; };
 		EC03E655235B9DD700E6444A /* UIViewController+Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alerts.swift"; sourceTree = "<group>"; };
 		EC03E657235BA54C00E6444A /* UIView+ShowHide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+ShowHide.swift"; sourceTree = "<group>"; };
+		EC03E659235BAAC200E6444A /* K.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = K.swift; sourceTree = "<group>"; };
 		EC0F46ED235B89AC00B1E60B /* GitHub Issues.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GitHub Issues.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC0F46F0235B89AC00B1E60B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC0F46F2235B89AC00B1E60B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -159,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				EC0F4714235B8D6E00B1E60B /* Firebase.swift */,
+				EC03E659235BAAC200E6444A /* K.swift */,
 			);
 			name = Namespaces;
 			sourceTree = "<group>";
@@ -419,6 +422,7 @@
 				EC03E647235B98CA00E6444A /* RoundedLoginButton.swift in Sources */,
 				EC03E656235B9DD700E6444A /* UIViewController+Alerts.swift in Sources */,
 				EC0F46F5235B89AC00B1E60B /* ViewController.swift in Sources */,
+				EC03E65A235BAAC200E6444A /* K.swift in Sources */,
 				EC03E64F235B99E900E6444A /* LoginModelError.swift in Sources */,
 				EC0F46F1235B89AC00B1E60B /* AppDelegate.swift in Sources */,
 				EC03E658235BA54C00E6444A /* UIView+ShowHide.swift in Sources */,

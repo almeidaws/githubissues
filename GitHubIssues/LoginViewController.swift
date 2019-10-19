@@ -43,6 +43,7 @@ extension LoginViewController: LoginModelDelegate {
         case .success(let user):
             print(user)
         case .failure(let error):
+            if case .userCancelledLogin = error { return }
             self.alert(error)
         }
     }
