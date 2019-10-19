@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="52" translatesAutoresizingMaskIntoConstraints="NO" id="xIM-7Y-HgF">
-                                <rect key="frame" x="41.5" y="343.5" width="331" height="120"/>
+                                <rect key="frame" x="41.5" y="342" width="331" height="212"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GitHub-Mark" translatesAutoresizingMaskIntoConstraints="NO" id="ZfH-ov-PX0">
                                         <rect key="frame" x="104.5" y="0.0" width="122" height="120"/>
@@ -24,13 +24,25 @@
                                             <constraint firstAttribute="width" secondItem="ZfH-ov-PX0" secondAttribute="height" multiplier="60:59" id="iVx-sX-f2G"/>
                                         </constraints>
                                     </imageView>
+                                    <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kfc-KN-ced" customClass="RoundedLoginButton" customModule="GitHub_Issues" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="172" width="331" height="40"/>
+                                        <color key="backgroundColor" red="0.090196078430000007" green="0.08235294118" blue="0.086274509799999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="23"/>
+                                        <state key="normal" title="Continue with GitHub">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Kfc-KN-ced" secondAttribute="trailing" id="Nto-XJ-NDR"/>
+                                    <constraint firstItem="Kfc-KN-ced" firstAttribute="leading" secondItem="xIM-7Y-HgF" secondAttribute="leading" id="ml9-2l-BDc"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="xIM-7Y-HgF" firstAttribute="centerX" secondItem="Z71-G2-Abe" secondAttribute="centerX" id="4dR-TE-dox"/>
-                            <constraint firstItem="xIM-7Y-HgF" firstAttribute="centerY" secondItem="Z71-G2-Abe" secondAttribute="centerY" multiplier="0.901" id="Fbp-M5-bb3"/>
+                            <constraint firstItem="xIM-7Y-HgF" firstAttribute="centerY" secondItem="Z71-G2-Abe" secondAttribute="centerY" id="Fbp-M5-bb3"/>
                             <constraint firstItem="xIM-7Y-HgF" firstAttribute="width" secondItem="R7C-xF-9AB" secondAttribute="width" multiplier="300/375" id="vTd-0z-3mx"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="R7C-xF-9AB"/>
