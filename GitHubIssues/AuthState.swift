@@ -27,7 +27,7 @@ class AuthState {
         self.handle = nil
     }
     
-    private func handleStateChanging(_ user: User?) {
+    private func handleStateChanging(_ user: FirebaseAuth.User?) {
         if let user = user {
             let id = user.uid
             guard let name = user.displayName else {
@@ -40,7 +40,7 @@ class AuthState {
                 return
             }
             
-            let user = GitHubUser(id: id, name: name, email: email)
+            let user = User(id: id, name: name, email: email)
             self.delegate?.authState(self, didChange: .success(user))
         } else {
             self.delegate?.authState(self, didChange: .success(nil))

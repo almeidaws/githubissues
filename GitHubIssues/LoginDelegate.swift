@@ -8,6 +8,6 @@
 
 import Foundation
 
-protocol LoginModelDelegate: AnyObject {
-    func loginModel(_ loginModel: LoginModel, didLogin result: Result<GitHubUser, LoginModelError>)
+protocol LoginDelegate: AnyObject {
+    func login(_ login: Login, didLogin result: Result<User, LoginModelError>)
 }

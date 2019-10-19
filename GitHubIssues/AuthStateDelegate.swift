@@ -10,5 +10,5 @@ import Foundation
 
 protocol AuthStateDelegate: AnyObject {
     
-    func authState(_ authState: AuthState, didChange result: Result<GitHubUser?, AuthStateError>)
+    func authState(_ authState: AuthState, didChange result: Result<User?, AuthStateError>)
 }

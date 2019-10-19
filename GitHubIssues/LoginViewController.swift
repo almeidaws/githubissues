@@ -12,7 +12,7 @@ class LoginViewController: UIViewController {
 
     @IBOutlet weak var loginButton: RoundedLoginButton!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
-    private lazy var loginModel = LoginModel()
+    var login: Login?
     private lazy var authState = AuthState();
     
     override func viewDidLoad() {
@@ -33,7 +33,7 @@ class LoginViewController: UIViewController {
     
     private func setupDelegates() {
         self.authState.delegate = self
-        self.loginModel.delegate = self
+        self.login?.delegate = self
     }
     
     private func showActivityIndicator() {
@@ -47,12 +47,12 @@ class LoginViewController: UIViewController {
     
     @IBAction func handleLogin(_ sender: UIButton) {
         self.showActivityIndicator()
-        self.loginModel.login()
+        self.login?.login()
     }
 }
 
 extension LoginViewController: AuthStateDelegate {
-    func authState(_ authState: AuthState, didChange result: Result<GitHubUser?, AuthStateError>) {
+    func authState(_ authState: AuthState, didChange result: Result<User?, AuthStateError>) {
         self.hideActivityIndicator()
         
         switch result {
@@ -66,8 +66,8 @@ extension LoginViewController: AuthStateDelegate {
     }
 }
 
-extension LoginViewController: LoginModelDelegate {
-    func loginModel(_ loginModel: LoginModel, didLogin result: Result<GitHubUser, LoginModelError>) {
+extension LoginViewController: LoginDelegate {
+    func login(_ login: Login, didLogin result: Result<User, LoginModelError>) {
         self.hideActivityIndicator()
         
         switch result {

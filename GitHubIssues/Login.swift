@@ -1,5 +1,5 @@
 //
-//  User.swift
+//  Login.swift
 //  GitHubIssues
 //
 //  Created by Gustavo Amaral on 19/10/19.
@@ -8,8 +8,7 @@
 
 import Foundation
 
-struct GitHubUser {
-    let id: String
-    let name: String
-    let email: String
+protocol Login {
+    var delegate: LoginDelegate? { get set }
+    func login()
 }
