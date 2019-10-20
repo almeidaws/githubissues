@@ -35,6 +35,12 @@
 		EC494A04235BD432000038AA /* IssuesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC494A03235BD432000038AA /* IssuesViewController.swift */; };
 		EC494A06235BD5BE000038AA /* Issues.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC494A05235BD5BE000038AA /* Issues.storyboard */; };
 		EC494A0A235BD743000038AA /* UIViewController+defaultContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC494A09235BD743000038AA /* UIViewController+defaultContainer.swift */; };
+		EC494A0D235BDAC5000038AA /* Issue.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC494A0C235BDAC5000038AA /* Issue.swift */; };
+		EC494A0F235BDB20000038AA /* IssueState.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC494A0E235BDB20000038AA /* IssueState.swift */; };
+		EC494A11235BDBAF000038AA /* IssueCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC494A10235BDBAF000038AA /* IssueCreator.swift */; };
+		EC494A13235BDE53000038AA /* PullRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC494A12235BDE53000038AA /* PullRequest.swift */; };
+		EC494A15235BDF1A000038AA /* GitHubAPIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC494A14235BDF1A000038AA /* GitHubAPIError.swift */; };
+		EC494A17235BE0A9000038AA /* Array<[Issue]>+initFromMoyaResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC494A16235BE0A9000038AA /* Array<[Issue]>+initFromMoyaResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +89,12 @@
 		EC494A03235BD432000038AA /* IssuesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssuesViewController.swift; sourceTree = "<group>"; };
 		EC494A05235BD5BE000038AA /* Issues.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Issues.storyboard; sourceTree = "<group>"; };
 		EC494A09235BD743000038AA /* UIViewController+defaultContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+defaultContainer.swift"; sourceTree = "<group>"; };
+		EC494A0C235BDAC5000038AA /* Issue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Issue.swift; sourceTree = "<group>"; };
+		EC494A0E235BDB20000038AA /* IssueState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueState.swift; sourceTree = "<group>"; };
+		EC494A10235BDBAF000038AA /* IssueCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueCreator.swift; sourceTree = "<group>"; };
+		EC494A12235BDE53000038AA /* PullRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullRequest.swift; sourceTree = "<group>"; };
+		EC494A14235BDF1A000038AA /* GitHubAPIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubAPIError.swift; sourceTree = "<group>"; };
+		EC494A16235BE0A9000038AA /* Array<[Issue]>+initFromMoyaResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array<[Issue]>+initFromMoyaResponse.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,6 +205,7 @@
 			children = (
 				EC494A0B235BD747000038AA /* UIViewController */,
 				EC03E657235BA54C00E6444A /* UIView+ShowHide.swift */,
+				EC494A16235BE0A9000038AA /* Array<[Issue]>+initFromMoyaResponse.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -284,6 +297,11 @@
 			isa = PBXGroup;
 			children = (
 				EC4949FF235BD2DE000038AA /* GitHubAPI.swift */,
+				EC494A14235BDF1A000038AA /* GitHubAPIError.swift */,
+				EC494A0C235BDAC5000038AA /* Issue.swift */,
+				EC494A0E235BDB20000038AA /* IssueState.swift */,
+				EC494A10235BDBAF000038AA /* IssueCreator.swift */,
+				EC494A12235BDE53000038AA /* PullRequest.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -495,6 +513,7 @@
 				EC03E662235BBABB00E6444A /* AuthStateDelegate.swift in Sources */,
 				EC494A00235BD2DE000038AA /* GitHubAPI.swift in Sources */,
 				EC03E666235BC1DB00E6444A /* Login.swift in Sources */,
+				EC494A0F235BDB20000038AA /* IssueState.swift in Sources */,
 				EC03E64A235B995000E6444A /* LoginViewController.swift in Sources */,
 				EC03E64D235B999500E6444A /* GitHubLogin.swift in Sources */,
 				EC03E647235B98CA00E6444A /* RoundedLoginButton.swift in Sources */,
@@ -505,11 +524,16 @@
 				EC03E660235BBAB100E6444A /* AuthStateError.swift in Sources */,
 				EC03E66A235BC9E300E6444A /* Injector.swift in Sources */,
 				EC0F46F1235B89AC00B1E60B /* AppDelegate.swift in Sources */,
+				EC494A13235BDE53000038AA /* PullRequest.swift in Sources */,
 				EC03E658235BA54C00E6444A /* UIView+ShowHide.swift in Sources */,
 				EC494A0A235BD743000038AA /* UIViewController+defaultContainer.swift in Sources */,
+				EC494A17235BE0A9000038AA /* Array<[Issue]>+initFromMoyaResponse.swift in Sources */,
+				EC494A0D235BDAC5000038AA /* Issue.swift in Sources */,
 				EC0F4715235B8D6E00B1E60B /* Firebase.swift in Sources */,
+				EC494A11235BDBAF000038AA /* IssueCreator.swift in Sources */,
 				EC03E653235B9A9A00E6444A /* User.swift in Sources */,
 				EC03E651235B9A7B00E6444A /* LoginDelegate.swift in Sources */,
+				EC494A15235BDF1A000038AA /* GitHubAPIError.swift in Sources */,
 				EC03E65D235BBA9500E6444A /* AuthState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

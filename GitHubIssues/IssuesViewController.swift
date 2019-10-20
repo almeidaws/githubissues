@@ -12,6 +12,7 @@ import Moya
 class IssuesViewController: UIViewController {
     
     private let provider = MoyaProvider<GitHubAPI>()
+    private var issues = [Issue]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +27,12 @@ class IssuesViewController: UIViewController {
         self.provider.request(.allIssues(owner: "apple", repo: "swift")) { (result) in
             switch result {
             case .success(let moyaResponse):
-                debugPrint(moyaResponse.statusCode)
+                do {
+                    self.issues = try Array(moyaResponse)
+                    debugPrint(self.issues)
+                } catch {
+                    self.alert(error)
+                }
             case .failure(let error):
                 self.alert(error)
             }

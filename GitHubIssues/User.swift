@@ -8,8 +8,12 @@
 
 import Foundation
 
-struct User {
+struct User: Codable, Hashable, CustomDebugStringConvertible {
     let id: String
     let name: String
     let email: String
+    
+    var debugDescription: String {
+        return "User '\(self.id)' with name '\(self.name)' and e-mail '\(self.email)'"
+    }
 }
