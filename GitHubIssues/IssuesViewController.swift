@@ -20,12 +20,12 @@ class IssuesViewController: UITableViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.setupDelegates()
-        self.interfaceController.setup()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         self.requestSwiftIssues()
+        self.interfaceController.setup()
     }
     
     private func setupDelegates() {
