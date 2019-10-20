@@ -10,7 +10,7 @@ import Foundation
 
 enum AuthStateError: Error, LocalizedError, CustomStringConvertible, CustomDebugStringConvertible {
     case firebase(Error)
-    case login(LoginModelError)
+    case login(LoginError)
     
     var description: String {
         switch self {

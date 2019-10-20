@@ -10,6 +10,7 @@ import Foundation
 
 protocol Login {
     var delegate: LoginDelegate? { get set }
+    
     func login()
     func logout()
 }

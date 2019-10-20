@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import GitHubIssues
+@testable import GitHub_Issues
 
 class GitHubIssuesTests: XCTestCase {
 

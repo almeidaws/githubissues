@@ -13,7 +13,7 @@
 		EC03E647235B98CA00E6444A /* RoundedLoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC03E646235B98CA00E6444A /* RoundedLoginButton.swift */; };
 		EC03E64A235B995000E6444A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC03E649235B995000E6444A /* LoginViewController.swift */; };
 		EC03E64D235B999500E6444A /* GitHubLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC03E64C235B999500E6444A /* GitHubLogin.swift */; };
-		EC03E64F235B99E900E6444A /* LoginModelError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC03E64E235B99E900E6444A /* LoginModelError.swift */; };
+		EC03E64F235B99E900E6444A /* LoginError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC03E64E235B99E900E6444A /* LoginError.swift */; };
 		EC03E651235B9A7B00E6444A /* LoginDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC03E650235B9A7B00E6444A /* LoginDelegate.swift */; };
 		EC03E653235B9A9A00E6444A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC03E652235B9A9A00E6444A /* User.swift */; };
 		EC03E656235B9DD700E6444A /* UIViewController+Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC03E655235B9DD700E6444A /* UIViewController+Alerts.swift */; };
@@ -24,7 +24,6 @@
 		EC03E662235BBABB00E6444A /* AuthStateDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC03E661235BBABB00E6444A /* AuthStateDelegate.swift */; };
 		EC03E666235BC1DB00E6444A /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC03E665235BC1DB00E6444A /* Login.swift */; };
 		EC03E66A235BC9E300E6444A /* Injector.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC03E668235BC7E400E6444A /* Injector.swift */; };
-		EC03E66B235BC9E300E6444A /* Injector.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC03E668235BC7E400E6444A /* Injector.swift */; };
 		EC0F46F1235B89AC00B1E60B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0F46F0235B89AC00B1E60B /* AppDelegate.swift */; };
 		EC0F46FA235B89AF00B1E60B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC0F46F9235B89AF00B1E60B /* Assets.xcassets */; };
 		EC0F46FD235B89AF00B1E60B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC0F46FB235B89AF00B1E60B /* LaunchScreen.storyboard */; };
@@ -52,7 +51,9 @@
 		ECE7FCFE235C7DB5008E1511 /* AlertOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE7FCFD235C7DB5008E1511 /* AlertOption.swift */; };
 		ECE7FD00235C7DC5008E1511 /* AlertText.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE7FCFF235C7DC5008E1511 /* AlertText.swift */; };
 		ECE7FD02235C8058008E1511 /* IssuesInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE7FD01235C8058008E1511 /* IssuesInterfaceController.swift */; };
-		ECE7FD04235C8096008E1511 /* IssuesDataSourceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE7FD03235C8096008E1511 /* IssuesDataSourceController.swift */; };
+		ECE7FD06235C87BA008E1511 /* LoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE7FD05235C87BA008E1511 /* LoginTests.swift */; };
+		ECE7FD09235C98EF008E1511 /* IssuesDelegateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE7FD03235C8096008E1511 /* IssuesDelegateViewController.swift */; };
+		ECE7FD0C235C9BC6008E1511 /* LoginProviderMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE7FD0B235C9BC6008E1511 /* LoginProviderMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,7 +77,7 @@
 		EC03E646235B98CA00E6444A /* RoundedLoginButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedLoginButton.swift; sourceTree = "<group>"; };
 		EC03E649235B995000E6444A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		EC03E64C235B999500E6444A /* GitHubLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubLogin.swift; sourceTree = "<group>"; };
-		EC03E64E235B99E900E6444A /* LoginModelError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModelError.swift; sourceTree = "<group>"; };
+		EC03E64E235B99E900E6444A /* LoginError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginError.swift; sourceTree = "<group>"; };
 		EC03E650235B9A7B00E6444A /* LoginDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDelegate.swift; sourceTree = "<group>"; };
 		EC03E652235B9A9A00E6444A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		EC03E655235B9DD700E6444A /* UIViewController+Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alerts.swift"; sourceTree = "<group>"; };
@@ -117,7 +118,9 @@
 		ECE7FCFD235C7DB5008E1511 /* AlertOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertOption.swift; sourceTree = "<group>"; };
 		ECE7FCFF235C7DC5008E1511 /* AlertText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertText.swift; sourceTree = "<group>"; };
 		ECE7FD01235C8058008E1511 /* IssuesInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssuesInterfaceController.swift; sourceTree = "<group>"; };
-		ECE7FD03235C8096008E1511 /* IssuesDataSourceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssuesDataSourceController.swift; sourceTree = "<group>"; };
+		ECE7FD03235C8096008E1511 /* IssuesDelegateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssuesDelegateViewController.swift; sourceTree = "<group>"; };
+		ECE7FD05235C87BA008E1511 /* LoginTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTests.swift; sourceTree = "<group>"; };
+		ECE7FD0B235C9BC6008E1511 /* LoginProviderMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProviderMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -237,10 +240,10 @@
 		EC03E65B235BBA7700E6444A /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				EC03E667235BC28700E6444A /* Concrete */,
+				EC03E667235BC28700E6444A /* Providers */,
 				EC03E665235BC1DB00E6444A /* Login.swift */,
 				EC03E650235B9A7B00E6444A /* LoginDelegate.swift */,
-				EC03E64E235B99E900E6444A /* LoginModelError.swift */,
+				EC03E64E235B99E900E6444A /* LoginError.swift */,
 				EC03E652235B9A9A00E6444A /* User.swift */,
 			);
 			name = Login;
@@ -256,12 +259,12 @@
 			name = AuthState;
 			sourceTree = "<group>";
 		};
-		EC03E667235BC28700E6444A /* Concrete */ = {
+		EC03E667235BC28700E6444A /* Providers */ = {
 			isa = PBXGroup;
 			children = (
 				EC03E64C235B999500E6444A /* GitHubLogin.swift */,
 			);
-			name = Concrete;
+			name = Providers;
 			sourceTree = "<group>";
 		};
 		EC03E66C235BCA9E00E6444A /* Issues */ = {
@@ -311,8 +314,9 @@
 		EC0F4706235B89AF00B1E60B /* GitHubIssuesTests */ = {
 			isa = PBXGroup;
 			children = (
+				ECE7FD10235C9D32008E1511 /* Property Lists Files */,
+				ECE7FD0F235C9D21008E1511 /* Login */,
 				EC0F4707235B89AF00B1E60B /* GitHubIssuesTests.swift */,
-				EC0F4709235B89AF00B1E60B /* Info.plist */,
 			);
 			path = GitHubIssuesTests;
 			sourceTree = "<group>";
@@ -343,7 +347,7 @@
 			isa = PBXGroup;
 			children = (
 				EC494A03235BD432000038AA /* IssuesViewController.swift */,
-				ECE7FD03235C8096008E1511 /* IssuesDataSourceController.swift */,
+				ECE7FD03235C8096008E1511 /* IssuesDelegateViewController.swift */,
 				ECE7FD01235C8058008E1511 /* IssuesInterfaceController.swift */,
 			);
 			name = Controller;
@@ -403,6 +407,23 @@
 				ECE7FCFF235C7DC5008E1511 /* AlertText.swift */,
 			);
 			name = Alerts;
+			sourceTree = "<group>";
+		};
+		ECE7FD0F235C9D21008E1511 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				ECE7FD05235C87BA008E1511 /* LoginTests.swift */,
+				ECE7FD0B235C9BC6008E1511 /* LoginProviderMock.swift */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		ECE7FD10235C9D32008E1511 /* Property Lists Files */ = {
+			isa = PBXGroup;
+			children = (
+				EC0F4709235B89AF00B1E60B /* Info.plist */,
+			);
+			name = "Property Lists Files";
 			sourceTree = "<group>";
 		};
 		EE64D134303D7C38DB6D1583 /* Frameworks */ = {
@@ -598,7 +619,8 @@
 				EC03E656235B9DD700E6444A /* UIViewController+Alerts.swift in Sources */,
 				ECE7FD00235C7DC5008E1511 /* AlertText.swift in Sources */,
 				EC03E65A235BAAC200E6444A /* K.swift in Sources */,
-				EC03E64F235B99E900E6444A /* LoginModelError.swift in Sources */,
+				ECE7FD09235C98EF008E1511 /* IssuesDelegateViewController.swift in Sources */,
+				EC03E64F235B99E900E6444A /* LoginError.swift in Sources */,
 				EC494A25235C688D000038AA /* AvatarAPI.swift in Sources */,
 				EC494A04235BD432000038AA /* IssuesViewController.swift in Sources */,
 				EC03E660235BBAB100E6444A /* AuthStateError.swift in Sources */,
@@ -616,7 +638,6 @@
 				ECE7FCFB235C7809008E1511 /* IssueDetailInterfaceController.swift in Sources */,
 				EC494A27235C6B60000038AA /* MoyaProviderError.swift in Sources */,
 				EC03E653235B9A9A00E6444A /* User.swift in Sources */,
-				ECE7FD04235C8096008E1511 /* IssuesDataSourceController.swift in Sources */,
 				ECE7FCFE235C7DB5008E1511 /* AlertOption.swift in Sources */,
 				EC03E651235B9A7B00E6444A /* LoginDelegate.swift in Sources */,
 				EC03E65D235BBA9500E6444A /* AuthState.swift in Sources */,
@@ -629,7 +650,8 @@
 			files = (
 				EC0F4708235B89AF00B1E60B /* GitHubIssuesTests.swift in Sources */,
 				EC494A26235C6B5F000038AA /* MoyaProviderError.swift in Sources */,
-				EC03E66B235BC9E300E6444A /* Injector.swift in Sources */,
+				ECE7FD0C235C9BC6008E1511 /* LoginProviderMock.swift in Sources */,
+				ECE7FD06235C87BA008E1511 /* LoginTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -826,7 +848,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GitHubIssues.app/GitHubIssues";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GitHub Issues.app/GitHub Issues";
 			};
 			name = Debug;
 		};
@@ -849,7 +871,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GitHubIssues.app/GitHubIssues";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GitHub Issues.app/GitHub Issues";
 			};
 			name = Release;
 		};

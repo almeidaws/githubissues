@@ -9,11 +9,11 @@
 import Foundation
 
 protocol LoginDelegate: AnyObject {
-    func login(_ login: Login, didLogin result: Result<User, LoginModelError>)
-    func login(_ login: Login, didLogout result: Result<Void, LoginModelError>)
+    func login(_ login: Login, didLogin result: Result<User, LoginError>)
+    func login(_ login: Login, didLogout result: Result<Void, LoginError>)
 }
 
 extension LoginDelegate {
-    func login(_ login: Login, didLogin result: Result<User, LoginModelError>) { }
-    func login(_ login: Login, didLogout result: Result<Void, LoginModelError>) { }
+    func login(_ login: Login, didLogin result: Result<User, LoginError>) { }
+    func login(_ login: Login, didLogout result: Result<Void, LoginError>) { }
 }

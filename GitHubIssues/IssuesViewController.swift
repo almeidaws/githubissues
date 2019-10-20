@@ -13,7 +13,7 @@ class IssuesViewController: UITableViewController {
     
     private let provider = MoyaProvider<GitHubAPI>()
     private lazy var interfaceController = IssuesInterfaceController(self)
-    private lazy var dataSource = IssuesDataSourceController(self)
+    private lazy var delegateController = IssuesDelegateController(self)
     var login: Login?
     var authState: AuthState?
     
@@ -31,7 +31,8 @@ class IssuesViewController: UITableViewController {
     private func setupDelegates() {
         self.login?.delegate = self
         self.authState?.delegate = self
-        self.tableView.dataSource = self.dataSource
+        self.tableView.dataSource = self.delegateController
+        self.tableView.delegate = self.delegateController
     }
     
     @objc func handleLogout() {
@@ -56,7 +57,7 @@ class IssuesViewController: UITableViewController {
             switch result {
             case .success(let moyaResponse):
                 do {
-                    self.dataSource.issues = try Array(moyaResponse)
+                    self.delegateController.issues = try Array(moyaResponse)
                         .filter { $0.state != .all }
                         .sorted { $0.number > $1.number }
                     self.tableView.reloadData()
@@ -73,7 +74,7 @@ class IssuesViewController: UITableViewController {
 
 extension IssuesViewController: LoginDelegate {
     
-    func login(_ login: Login, didLogout result: Result<Void, LoginModelError>) {
+    func login(_ login: Login, didLogout result: Result<Void, LoginError>) {
         switch result {
         case .success:
             self.dismiss(animated: true)

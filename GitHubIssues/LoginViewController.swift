@@ -74,7 +74,7 @@ extension LoginViewController: AuthStateDelegate {
 
 extension LoginViewController: LoginDelegate {
     
-    func login(_ login: Login, didLogin result: Result<User, LoginModelError>) {
+    func login(_ login: Login, didLogin result: Result<User, LoginError>) {
         self.hideActivityIndicator()
         
         switch result {

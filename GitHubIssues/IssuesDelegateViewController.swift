@@ -8,7 +8,7 @@
 
 import UIKit
 
-class IssuesDataSourceController: NSObject, UITableViewDataSource {
+class IssuesDelegateController: NSObject, UITableViewDataSource, UITableViewDelegate {
     
     var issues = [Issue]()
     private weak var controller: IssuesViewController?
