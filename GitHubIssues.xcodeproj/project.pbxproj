@@ -51,6 +51,8 @@
 		ECE7FCFB235C7809008E1511 /* IssueDetailInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE7FCFA235C7809008E1511 /* IssueDetailInterfaceController.swift */; };
 		ECE7FCFE235C7DB5008E1511 /* AlertOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE7FCFD235C7DB5008E1511 /* AlertOption.swift */; };
 		ECE7FD00235C7DC5008E1511 /* AlertText.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE7FCFF235C7DC5008E1511 /* AlertText.swift */; };
+		ECE7FD02235C8058008E1511 /* IssuesInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE7FD01235C8058008E1511 /* IssuesInterfaceController.swift */; };
+		ECE7FD04235C8096008E1511 /* IssuesDataSourceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE7FD03235C8096008E1511 /* IssuesDataSourceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,6 +116,8 @@
 		ECE7FCFA235C7809008E1511 /* IssueDetailInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueDetailInterfaceController.swift; sourceTree = "<group>"; };
 		ECE7FCFD235C7DB5008E1511 /* AlertOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertOption.swift; sourceTree = "<group>"; };
 		ECE7FCFF235C7DC5008E1511 /* AlertText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertText.swift; sourceTree = "<group>"; };
+		ECE7FD01235C8058008E1511 /* IssuesInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssuesInterfaceController.swift; sourceTree = "<group>"; };
+		ECE7FD03235C8096008E1511 /* IssuesDataSourceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssuesDataSourceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -339,6 +343,8 @@
 			isa = PBXGroup;
 			children = (
 				EC494A03235BD432000038AA /* IssuesViewController.swift */,
+				ECE7FD03235C8096008E1511 /* IssuesDataSourceController.swift */,
+				ECE7FD01235C8058008E1511 /* IssuesInterfaceController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -584,6 +590,7 @@
 				EC494A21235C04C4000038AA /* IssueDetailViewController.swift in Sources */,
 				EC03E666235BC1DB00E6444A /* Login.swift in Sources */,
 				EC494A19235BF42F000038AA /* IssueTableViewCell.swift in Sources */,
+				ECE7FD02235C8058008E1511 /* IssuesInterfaceController.swift in Sources */,
 				EC494A0F235BDB20000038AA /* IssueState.swift in Sources */,
 				EC03E64A235B995000E6444A /* LoginViewController.swift in Sources */,
 				EC03E64D235B999500E6444A /* GitHubLogin.swift in Sources */,
@@ -609,6 +616,7 @@
 				ECE7FCFB235C7809008E1511 /* IssueDetailInterfaceController.swift in Sources */,
 				EC494A27235C6B60000038AA /* MoyaProviderError.swift in Sources */,
 				EC03E653235B9A9A00E6444A /* User.swift in Sources */,
+				ECE7FD04235C8096008E1511 /* IssuesDataSourceController.swift in Sources */,
 				ECE7FCFE235C7DB5008E1511 /* AlertOption.swift in Sources */,
 				EC03E651235B9A7B00E6444A /* LoginDelegate.swift in Sources */,
 				EC03E65D235BBA9500E6444A /* AuthState.swift in Sources */,
