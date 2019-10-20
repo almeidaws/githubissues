@@ -59,4 +59,13 @@ class GitHubLogin: Login {
             }
         }
     }
+    
+    func logout() {
+        do {
+            try Auth.auth().signOut()
+            self.delegate?.login(self, didLogout: .success(()))
+        } catch {
+            self.delegate?.login(self, didLogout: .failure(.firebase(error)))
+        }
+    }
 }

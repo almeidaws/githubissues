@@ -20,6 +20,7 @@ class LoginViewController: UIViewController {
         self.setupDelegates()
         self.showActivityIndicator()
         self.authState.startObserving()
+        
     }
     
     override func viewDidDisappear(_ animated: Bool) {
@@ -72,6 +73,7 @@ extension LoginViewController: AuthStateDelegate {
 }
 
 extension LoginViewController: LoginDelegate {
+    
     func login(_ login: Login, didLogin result: Result<User, LoginModelError>) {
         self.hideActivityIndicator()
         

@@ -13,6 +13,7 @@ class IssuesViewController: UITableViewController {
     
     private let provider = MoyaProvider<GitHubAPI>()
     private var issues = [Issue]()
+    var login: Login?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +23,27 @@ class IssuesViewController: UITableViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.requestSwiftIssues()
+        self.setupLogoutButton()
+        self.setupDelegates()
+    }
+    
+    private func setupDelegates() {
+        self.login?.delegate = self
+    }
+    
+    private func setupLogoutButton() {
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Logout", style: .plain, target: self, action: #selector(handleLogout))
+    }
+    
+    @objc private func handleLogout() {
+        self.alert(text: .title("Do you really wanna logout?")) { (option) in
+            switch option {
+            case .ok:
+                self.login?.logout()
+            case .cancel:
+                break
+            }
+        }
     }
     
     private func configureNavigationControllerIfPresent() {
@@ -98,5 +120,19 @@ class IssuesViewController: UITableViewController {
         let navigation = UINavigationController(rootViewController: issueDetailController)
         navigation.modalPresentationStyle = .fullScreen
         self.present(navigation, animated: true, completion: nil)
+    }
+}
+
+
+extension IssuesViewController: LoginDelegate {
+    
+    func login(_ login: Login, didLogout result: Result<Void, LoginModelError>) {
+        switch result {
+        case .success:
+            self.dismiss(animated: true)
+        case .failure(let error):
+            if case .userCancelledLogin = error { return }
+            self.alert(error)
+        }
     }
 }

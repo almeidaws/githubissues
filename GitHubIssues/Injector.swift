@@ -32,7 +32,7 @@ struct Injector {
     
     private static func injectIssuesViewController(at container: Container) {
         Injector.inject(fromStoryboardNamed: "Issues", at: container) { (controller: IssuesViewController) in
-            // Dependencies go here
+            controller.login = container.resolve(Login.self)
         }
     }
     

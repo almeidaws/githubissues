@@ -49,6 +49,8 @@
 		EC494A27235C6B60000038AA /* MoyaProviderError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC494A14235BDF1A000038AA /* MoyaProviderError.swift */; };
 		EC494A29235C6BD5000038AA /* RoundedAvatarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC494A28235C6BD5000038AA /* RoundedAvatarImageView.swift */; };
 		ECE7FCFB235C7809008E1511 /* IssueDetailInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE7FCFA235C7809008E1511 /* IssueDetailInterfaceController.swift */; };
+		ECE7FCFE235C7DB5008E1511 /* AlertOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE7FCFD235C7DB5008E1511 /* AlertOption.swift */; };
+		ECE7FD00235C7DC5008E1511 /* AlertText.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE7FCFF235C7DC5008E1511 /* AlertText.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,6 +112,8 @@
 		EC494A24235C688D000038AA /* AvatarAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarAPI.swift; sourceTree = "<group>"; };
 		EC494A28235C6BD5000038AA /* RoundedAvatarImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedAvatarImageView.swift; sourceTree = "<group>"; };
 		ECE7FCFA235C7809008E1511 /* IssueDetailInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueDetailInterfaceController.swift; sourceTree = "<group>"; };
+		ECE7FCFD235C7DB5008E1511 /* AlertOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertOption.swift; sourceTree = "<group>"; };
+		ECE7FCFF235C7DC5008E1511 /* AlertText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertText.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -342,7 +346,7 @@
 		EC494A0B235BD747000038AA /* UIViewController */ = {
 			isa = PBXGroup;
 			children = (
-				EC03E655235B9DD700E6444A /* UIViewController+Alerts.swift */,
+				ECE7FCFC235C7D9E008E1511 /* Alerts */,
 				EC494A09235BD743000038AA /* UIViewController+defaultContainer.swift */,
 			);
 			name = UIViewController;
@@ -383,6 +387,16 @@
 				EC494A24235C688D000038AA /* AvatarAPI.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		ECE7FCFC235C7D9E008E1511 /* Alerts */ = {
+			isa = PBXGroup;
+			children = (
+				EC03E655235B9DD700E6444A /* UIViewController+Alerts.swift */,
+				ECE7FCFD235C7DB5008E1511 /* AlertOption.swift */,
+				ECE7FCFF235C7DC5008E1511 /* AlertText.swift */,
+			);
+			name = Alerts;
 			sourceTree = "<group>";
 		};
 		EE64D134303D7C38DB6D1583 /* Frameworks */ = {
@@ -575,6 +589,7 @@
 				EC03E64D235B999500E6444A /* GitHubLogin.swift in Sources */,
 				EC03E647235B98CA00E6444A /* RoundedLoginButton.swift in Sources */,
 				EC03E656235B9DD700E6444A /* UIViewController+Alerts.swift in Sources */,
+				ECE7FD00235C7DC5008E1511 /* AlertText.swift in Sources */,
 				EC03E65A235BAAC200E6444A /* K.swift in Sources */,
 				EC03E64F235B99E900E6444A /* LoginModelError.swift in Sources */,
 				EC494A25235C688D000038AA /* AvatarAPI.swift in Sources */,
@@ -594,6 +609,7 @@
 				ECE7FCFB235C7809008E1511 /* IssueDetailInterfaceController.swift in Sources */,
 				EC494A27235C6B60000038AA /* MoyaProviderError.swift in Sources */,
 				EC03E653235B9A9A00E6444A /* User.swift in Sources */,
+				ECE7FCFE235C7DB5008E1511 /* AlertOption.swift in Sources */,
 				EC03E651235B9A7B00E6444A /* LoginDelegate.swift in Sources */,
 				EC03E65D235BBA9500E6444A /* AuthState.swift in Sources */,
 			);
