@@ -83,12 +83,14 @@ PODS:
   - nanopb/encode (0.3.901)
   - Result (4.1.0)
   - Swinject (2.7.1)
+  - TUSafariActivity (1.0.4)
 
 DEPENDENCIES:
   - Firebase/Analytics
   - Firebase/Auth
   - Moya
   - Swinject
+  - TUSafariActivity
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -110,6 +112,7 @@ SPEC REPOS:
     - nanopb
     - Result
     - Swinject
+    - TUSafariActivity
 
 SPEC CHECKSUMS:
   Alamofire: afc3e7c6db61476cb45cdd23fed06bad03bbc321
@@ -130,7 +133,8 @@ SPEC CHECKSUMS:
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
   Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
   Swinject: ddf78b8486dd9b71a667b852cad919ab4484478e
+  TUSafariActivity: afc55a00965377939107ce4fdc7f951f62454546
 
-PODFILE CHECKSUM: ea8433d2efaaccc337f0b4c26365c87d343ea329
+PODFILE CHECKSUM: 9faf4cb633c2723239d4cd61c650404858e2b2f2
 
 COCOAPODS: 1.7.3

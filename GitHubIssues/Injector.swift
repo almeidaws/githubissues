@@ -16,11 +16,18 @@ struct Injector {
         self.injectLogin(at: container)
         self.injectLoginViewController(at: container)
         self.injectIssuesViewController(at: container)
+        self.injectIssueDetailViewController(at: container)
     }
     
     static func initialViewController(from container: Container) -> UIViewController {
         guard let initial = container.resolve(LoginViewController.self) else { fatalError("There's no dependency for initial view controller") }
         return initial
+    }
+    
+    private static func injectIssueDetailViewController(at container: Container) {
+        Injector.inject(fromStoryboardNamed: "IssueDetail", at: container) { (controller: IssueDetailViewController) in
+            // Dependencies go here
+        }
     }
     
     private static func injectIssuesViewController(at container: Container) {

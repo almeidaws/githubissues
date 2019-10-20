@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum GitHubAPIError: Error, LocalizedError, CustomStringConvertible, CustomDebugStringConvertible {
+enum MoyaProviderError: Error, LocalizedError, CustomStringConvertible, CustomDebugStringConvertible {
     case unexpectedStatusCode(Int)
     
     var description: String {

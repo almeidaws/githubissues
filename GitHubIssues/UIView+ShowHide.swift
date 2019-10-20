@@ -9,23 +9,35 @@
 import UIKit
 
 extension UIView {
-    func hide(completion: (() -> Void)? = nil) {
+    func hide(animated: Bool = false, completion: (() -> Void)? = nil) {
         self.isUserInteractionEnabled = false
-        UIViewPropertyAnimator.runningPropertyAnimator(withDuration: 0.25, delay: 0, options: .curveEaseInOut, animations: {
+        if animated {
+            UIViewPropertyAnimator.runningPropertyAnimator(withDuration: 0.25, delay: 0, options: .curveEaseInOut, animations: {
+                self.alpha = 0
+            }, completion: { position in
+                guard position == .end else { return }
+                completion?()
+            })
+        } else {
             self.alpha = 0
-        }, completion: { position in
-            guard position == .end else { return }
             completion?()
-        })
+        }
+        
     }
     
-    func show(completion: (() -> Void)? = nil) {
+    func show(animated: Bool = false, completion: (() -> Void)? = nil) {
         self.isUserInteractionEnabled = true
-        UIViewPropertyAnimator.runningPropertyAnimator(withDuration: 0.25, delay: 0, options: .curveEaseInOut, animations: {
+        if animated {
+            UIViewPropertyAnimator.runningPropertyAnimator(withDuration: 0.25, delay: 0, options: .curveEaseInOut, animations: {
+                self.alpha = 1
+            }, completion: { position in
+                guard position == .end else { return }
+                completion?()
+            })
+        } else {
             self.alpha = 1
-        }, completion: { position in
-            guard position == .end else { return }
             completion?()
-        })
+        }
+        
     }
 }

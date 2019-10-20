@@ -87,4 +87,16 @@ class IssuesViewController: UITableViewController {
         
         return cell
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let issue = self.issues[indexPath.row]
+        guard let issueDetailController = self.defaultContainer.resolve(IssueDetailViewController.self) else {
+            fatalError("There's no IssueDetailViewController to resolve.")
+        }
+        
+        issueDetailController.issue = issue
+        let navigation = UINavigationController(rootViewController: issueDetailController)
+        navigation.modalPresentationStyle = .fullScreen
+        self.present(navigation, animated: true, completion: nil)
+    }
 }

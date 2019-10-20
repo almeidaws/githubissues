@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1hs-PS-h6Y">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Issue Detail View Controller-->
+        <scene sceneID="qIQ-tj-8sf">
+            <objects>
+                <viewController id="1hs-PS-h6Y" customClass="IssueDetailViewController" customModule="GitHub_Issues" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hrJ-aM-zIz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ye-hK-SO9">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zk5-Gs-MD7">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LbH-hG-H5e">
+                                                <rect key="frame" x="16" y="25" width="382" height="134"/>
+                                                <string key="text">[SyntaxParse] Assert that 
+the children of syntax tree 
+nodes have contiguous 
+ranges</string>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Created on 22/10/2019 at 14:20" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wBz-dd-fYb">
+                                                <rect key="frame" x="74" y="211" width="192" height="16"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.39000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="open_badge" translatesAutoresizingMaskIntoConstraints="NO" id="j4i-yq-oiy" customClass="IssueStateBadgeImageView" customModule="GitHub_Issues" customModuleProvider="target">
+                                                <rect key="frame" x="16" y="210" width="52" height="18"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="52" id="1HX-95-iMD"/>
+                                                    <constraint firstAttribute="height" constant="18" id="h97-ui-Rb4"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="9XE-jY-dvS" customClass="RoundedAvatarImageView" customModule="GitHub_Issues" customModuleProvider="target">
+                                                <rect key="frame" x="16" y="179" width="22" height="22"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="22" id="DLl-5M-ioK"/>
+                                                    <constraint firstAttribute="width" secondItem="9XE-jY-dvS" secondAttribute="height" multiplier="1:1" id="Uew-IK-sKc"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RdX-w4-tgE">
+                                                <rect key="frame" x="16" y="281" width="382" height="134"/>
+                                                <string key="text">Re-apply #27406 by @nathawes
+Also apply the assertion to node creations from
+ SyntaxParsingContext::createSyntaxAs() API.
+
+(Disabled syntax tree creation for 
+syntax-ide-test -code-completion because code
+ completion skips some portion of the source text)</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="almeidaws" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fUV-nD-ZJD">
+                                                <rect key="frame" x="44" y="182" width="63.5" height="16"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.39000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstItem="j4i-yq-oiy" firstAttribute="top" secondItem="9XE-jY-dvS" secondAttribute="bottom" constant="9" id="6Sz-15-7Xt"/>
+                                            <constraint firstItem="9XE-jY-dvS" firstAttribute="leading" secondItem="LbH-hG-H5e" secondAttribute="leading" id="APC-b1-YQ9"/>
+                                            <constraint firstItem="wBz-dd-fYb" firstAttribute="centerY" secondItem="j4i-yq-oiy" secondAttribute="centerY" id="FlK-Nc-dPS"/>
+                                            <constraint firstAttribute="trailing" secondItem="LbH-hG-H5e" secondAttribute="trailing" constant="16" id="HR9-oT-lir"/>
+                                            <constraint firstItem="fUV-nD-ZJD" firstAttribute="leading" secondItem="9XE-jY-dvS" secondAttribute="trailing" constant="6" id="Mxm-5L-B9o"/>
+                                            <constraint firstItem="9XE-jY-dvS" firstAttribute="top" secondItem="LbH-hG-H5e" secondAttribute="bottom" constant="20" id="N32-bP-1mj"/>
+                                            <constraint firstItem="LbH-hG-H5e" firstAttribute="top" secondItem="Zk5-Gs-MD7" secondAttribute="top" constant="25" id="Q4o-2r-eV0"/>
+                                            <constraint firstItem="RdX-w4-tgE" firstAttribute="leading" secondItem="Zk5-Gs-MD7" secondAttribute="leading" constant="16" id="RBd-2B-efD"/>
+                                            <constraint firstAttribute="trailing" secondItem="RdX-w4-tgE" secondAttribute="trailing" constant="16" id="dCF-mV-VDq"/>
+                                            <constraint firstItem="fUV-nD-ZJD" firstAttribute="centerY" secondItem="9XE-jY-dvS" secondAttribute="centerY" id="lfF-1Y-mJ9"/>
+                                            <constraint firstItem="wBz-dd-fYb" firstAttribute="leading" secondItem="j4i-yq-oiy" secondAttribute="trailing" constant="6" id="m5m-SF-NLt"/>
+                                            <constraint firstItem="RdX-w4-tgE" firstAttribute="top" secondItem="j4i-yq-oiy" secondAttribute="bottom" constant="53" id="mXq-qG-ZVQ"/>
+                                            <constraint firstItem="LbH-hG-H5e" firstAttribute="leading" secondItem="Zk5-Gs-MD7" secondAttribute="leading" constant="16" id="oQF-fk-MGl"/>
+                                            <constraint firstItem="j4i-yq-oiy" firstAttribute="leading" secondItem="LbH-hG-H5e" secondAttribute="leading" id="tWu-5L-FBc"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Zk5-Gs-MD7" firstAttribute="height" secondItem="7ye-hK-SO9" secondAttribute="height" priority="250" id="E3l-xy-Fbv"/>
+                                    <constraint firstAttribute="trailing" secondItem="Zk5-Gs-MD7" secondAttribute="trailing" id="GnN-1s-wEr"/>
+                                    <constraint firstItem="Zk5-Gs-MD7" firstAttribute="width" secondItem="7ye-hK-SO9" secondAttribute="width" id="NJw-7h-TIa"/>
+                                    <constraint firstItem="Zk5-Gs-MD7" firstAttribute="leading" secondItem="7ye-hK-SO9" secondAttribute="leading" id="OPI-gJ-hEI"/>
+                                    <constraint firstItem="Zk5-Gs-MD7" firstAttribute="top" secondItem="7ye-hK-SO9" secondAttribute="top" id="j8n-vn-8Np"/>
+                                    <constraint firstAttribute="bottom" secondItem="Zk5-Gs-MD7" secondAttribute="bottom" id="rRy-Rx-ous"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="7ye-hK-SO9" firstAttribute="top" secondItem="Zr4-EM-v3Y" secondAttribute="top" id="Pnz-WE-6Xk"/>
+                            <constraint firstItem="7ye-hK-SO9" firstAttribute="bottom" secondItem="Zr4-EM-v3Y" secondAttribute="bottom" id="cKP-pA-9RX"/>
+                            <constraint firstItem="7ye-hK-SO9" firstAttribute="leading" secondItem="Zr4-EM-v3Y" secondAttribute="leading" id="cug-7z-m59"/>
+                            <constraint firstItem="7ye-hK-SO9" firstAttribute="trailing" secondItem="Zr4-EM-v3Y" secondAttribute="trailing" id="pwE-dR-mlZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Zr4-EM-v3Y"/>
+                    </view>
+                    <connections>
+                        <outlet property="creationDate" destination="wBz-dd-fYb" id="FY9-mK-hWL"/>
+                        <outlet property="creatorNickname" destination="fUV-nD-ZJD" id="Qzq-wA-fNU"/>
+                        <outlet property="creatorPhoto" destination="9XE-jY-dvS" id="DF6-HD-YeC"/>
+                        <outlet property="issueDescription" destination="RdX-w4-tgE" id="Pme-N8-e0y"/>
+                        <outlet property="issueStateImage" destination="j4i-yq-oiy" id="VSU-v9-L1X"/>
+                        <outlet property="titleLabel" destination="LbH-hG-H5e" id="9ue-gV-Emu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oLv-82-PlC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1050.7246376811595" y="88.392857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="avatar" width="22" height="22"/>
+        <image name="open_badge" width="52" height="18"/>
+    </resources>
+</document>

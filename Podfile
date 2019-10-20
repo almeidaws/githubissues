@@ -10,6 +10,7 @@ target 'GitHubIssues' do
   pod 'Firebase/Auth'
   pod 'Swinject'
   pod 'Moya'
+  pod 'TUSafariActivity'
 
   target 'GitHubIssuesTests' do
     inherit! :search_paths

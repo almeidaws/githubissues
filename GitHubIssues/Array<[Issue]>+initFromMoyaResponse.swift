@@ -12,7 +12,7 @@ import Moya
 extension Array where Element == Issue {
     init(_ moyaResponse: Response) throws {
         guard moyaResponse.statusCode == 200 else {
-            throw GitHubAPIError.unexpectedStatusCode(moyaResponse.statusCode)
+            throw MoyaProviderError.unexpectedStatusCode(moyaResponse.statusCode)
         }
         
         let decoder = JSONDecoder()
