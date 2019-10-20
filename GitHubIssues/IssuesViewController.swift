@@ -15,6 +15,7 @@ class IssuesViewController: UITableViewController {
     private lazy var interfaceController = IssuesInterfaceController(self)
     private lazy var dataSource = IssuesDataSourceController(self)
     var login: Login?
+    var authState: AuthState?
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -29,6 +30,7 @@ class IssuesViewController: UITableViewController {
     
     private func setupDelegates() {
         self.login?.delegate = self
+        self.authState?.delegate = self
         self.tableView.dataSource = self.dataSource
     }
     
@@ -69,7 +71,6 @@ class IssuesViewController: UITableViewController {
     }
 }
 
-
 extension IssuesViewController: LoginDelegate {
     
     func login(_ login: Login, didLogout result: Result<Void, LoginModelError>) {
@@ -79,6 +80,19 @@ extension IssuesViewController: LoginDelegate {
         case .failure(let error):
             if case .userCancelledLogin = error { return }
             self.alert(error)
+        }
+    }
+}
+
+extension IssuesViewController: AuthStateDelegate {
+    func authState(_ authState: AuthState, didChange result: Result<User?, AuthStateError>) {
+        switch result {
+        case .success(let user) where user != nil:
+            self.dismiss(animated: true)
+        case .failure(let error):
+            self.alert(error)
+        case .success:
+            break
         }
     }
 }

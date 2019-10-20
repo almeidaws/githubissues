@@ -13,7 +13,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var loginButton: RoundedLoginButton!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     var login: Login?
-    var authState: AuthState?;
+    var authState: AuthState?
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
