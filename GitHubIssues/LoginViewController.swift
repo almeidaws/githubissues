@@ -13,23 +13,23 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var loginButton: RoundedLoginButton!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     var login: Login?
-    private lazy var authState = AuthState();
+    var authState: AuthState?;
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.setupDelegates()
         self.showActivityIndicator()
-        self.authState.startObserving()
+        self.authState?.startObserving()
         
     }
     
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
-        self.authState.stopObserving()
+        self.authState?.stopObserving()
     }
     
     private func setupDelegates() {
-        self.authState.delegate = self
+        self.authState?.delegate = self
         self.login?.delegate = self
     }
     

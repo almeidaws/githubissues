@@ -14,6 +14,7 @@ struct Injector {
     
     static func inject(at container: Container) {
         self.injectLogin(at: container)
+        self.injectAuthState(at: container)
         self.injectLoginViewController(at: container)
         self.injectIssuesViewController(at: container)
         self.injectIssueDetailViewController(at: container)
@@ -39,6 +40,7 @@ struct Injector {
     private static func injectLoginViewController(at container: Container) {
         Injector.inject(fromStoryboardNamed: "Login", at: container) { (controller: LoginViewController) in
             controller.login = container.resolve(Login.self)
+            controller.authState = container.resolve(AuthState.self)
         }
     }
     
@@ -56,6 +58,10 @@ struct Injector {
             return concreteController
         }
 
+    }
+    
+    private static func injectAuthState(at container: Container) {
+        container.register(AuthState.self) { _ in AuthState() }
     }
     
     private static func injectLogin(at container: Container) {
