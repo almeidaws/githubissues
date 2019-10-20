@@ -48,6 +48,7 @@
 		EC494A26235C6B5F000038AA /* MoyaProviderError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC494A14235BDF1A000038AA /* MoyaProviderError.swift */; };
 		EC494A27235C6B60000038AA /* MoyaProviderError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC494A14235BDF1A000038AA /* MoyaProviderError.swift */; };
 		EC494A29235C6BD5000038AA /* RoundedAvatarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC494A28235C6BD5000038AA /* RoundedAvatarImageView.swift */; };
+		ECE7FCFB235C7809008E1511 /* IssueDetailInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE7FCFA235C7809008E1511 /* IssueDetailInterfaceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,6 +109,7 @@
 		EC494A22235C67CA000038AA /* IssueStateBadgeImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueStateBadgeImageView.swift; sourceTree = "<group>"; };
 		EC494A24235C688D000038AA /* AvatarAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarAPI.swift; sourceTree = "<group>"; };
 		EC494A28235C6BD5000038AA /* RoundedAvatarImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedAvatarImageView.swift; sourceTree = "<group>"; };
+		ECE7FCFA235C7809008E1511 /* IssueDetailInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueDetailInterfaceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -370,6 +372,7 @@
 			isa = PBXGroup;
 			children = (
 				EC494A20235C04C4000038AA /* IssueDetailViewController.swift */,
+				ECE7FCFA235C7809008E1511 /* IssueDetailInterfaceController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -588,6 +591,7 @@
 				EC494A0D235BDAC5000038AA /* Issue.swift in Sources */,
 				EC0F4715235B8D6E00B1E60B /* Firebase.swift in Sources */,
 				EC494A11235BDBAF000038AA /* IssueCreator.swift in Sources */,
+				ECE7FCFB235C7809008E1511 /* IssueDetailInterfaceController.swift in Sources */,
 				EC494A27235C6B60000038AA /* MoyaProviderError.swift in Sources */,
 				EC03E653235B9A9A00E6444A /* User.swift in Sources */,
 				EC03E651235B9A7B00E6444A /* LoginDelegate.swift in Sources */,
