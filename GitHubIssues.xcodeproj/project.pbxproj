@@ -41,6 +41,7 @@
 		EC494A13235BDE53000038AA /* PullRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC494A12235BDE53000038AA /* PullRequest.swift */; };
 		EC494A15235BDF1A000038AA /* GitHubAPIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC494A14235BDF1A000038AA /* GitHubAPIError.swift */; };
 		EC494A17235BE0A9000038AA /* Array<[Issue]>+initFromMoyaResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC494A16235BE0A9000038AA /* Array<[Issue]>+initFromMoyaResponse.swift */; };
+		EC494A19235BF42F000038AA /* IssueTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC494A18235BF42F000038AA /* IssueTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +96,7 @@
 		EC494A12235BDE53000038AA /* PullRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullRequest.swift; sourceTree = "<group>"; };
 		EC494A14235BDF1A000038AA /* GitHubAPIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubAPIError.swift; sourceTree = "<group>"; };
 		EC494A16235BE0A9000038AA /* Array<[Issue]>+initFromMoyaResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array<[Issue]>+initFromMoyaResponse.swift"; sourceTree = "<group>"; };
+		EC494A18235BF42F000038AA /* IssueTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -310,6 +312,7 @@
 			isa = PBXGroup;
 			children = (
 				EC494A05235BD5BE000038AA /* Issues.storyboard */,
+				EC494A18235BF42F000038AA /* IssueTableViewCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -513,6 +516,7 @@
 				EC03E662235BBABB00E6444A /* AuthStateDelegate.swift in Sources */,
 				EC494A00235BD2DE000038AA /* GitHubAPI.swift in Sources */,
 				EC03E666235BC1DB00E6444A /* Login.swift in Sources */,
+				EC494A19235BF42F000038AA /* IssueTableViewCell.swift in Sources */,
 				EC494A0F235BDB20000038AA /* IssueState.swift in Sources */,
 				EC03E64A235B995000E6444A /* LoginViewController.swift in Sources */,
 				EC03E64D235B999500E6444A /* GitHubLogin.swift in Sources */,

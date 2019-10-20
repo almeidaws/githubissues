@@ -41,11 +41,14 @@ class LoginViewController: UIViewController {
         self.loginButton.show()
     }
     
-    private func goToIssuesController() {
+    private func goToIssuesController(animated: Bool) {
         guard let issuesController = self.defaultContainer.resolve(IssuesViewController.self) else {
             fatalError("There's no IssuesController to resolve.")
         }
-        self.present(issuesController, animated: true, completion: nil)
+        let navigation = UINavigationController(rootViewController: issuesController)
+        navigation.modalPresentationStyle = .fullScreen
+        navigation.navigationBar.prefersLargeTitles = true
+        self.present(navigation, animated: animated, completion: nil)
     }
     
     @IBAction func handleLogin(_ sender: UIButton) {
@@ -60,7 +63,7 @@ extension LoginViewController: AuthStateDelegate {
         
         switch result {
         case .success(let user) where user != nil:
-            self.goToIssuesController()
+            self.goToIssuesController(animated: false)
         case .failure(let error):
             self.alert(error)
         case .success:
@@ -75,7 +78,7 @@ extension LoginViewController: LoginDelegate {
         
         switch result {
         case .success:
-            self.goToIssuesController()
+            self.goToIssuesController(animated: false)
         case .failure(let error):
             if case .userCancelledLogin = error { return }
             self.alert(error)

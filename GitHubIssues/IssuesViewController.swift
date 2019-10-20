@@ -9,7 +9,7 @@
 import UIKit
 import Moya
 
-class IssuesViewController: UIViewController {
+class IssuesViewController: UITableViewController {
     
     private let provider = MoyaProvider<GitHubAPI>()
     private var issues = [Issue]()
@@ -29,7 +29,9 @@ class IssuesViewController: UIViewController {
             case .success(let moyaResponse):
                 do {
                     self.issues = try Array(moyaResponse)
-                    debugPrint(self.issues)
+                        .filter { $0.state != .all }
+                        .sorted { $0.number > $1.number }
+                    self.tableView.reloadData()
                 } catch {
                     self.alert(error)
                 }
@@ -39,4 +41,33 @@ class IssuesViewController: UIViewController {
         }
     }
     
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.issues.count
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let issue = self.issues[indexPath.row]
+        
+        let cell: IssueTableViewCell
+        if case .closed = issue.state {
+            guard let issueCell = tableView.dequeueReusableCell(withIdentifier: "closed", for: indexPath) as? IssueTableViewCell else {
+                fatalError("Unable to found IssueTableViewCell for closed state.")
+            }
+            cell = issueCell
+        } else {
+            guard let issueCell = tableView.dequeueReusableCell(withIdentifier: "open", for: indexPath) as? IssueTableViewCell else {
+                fatalError("Unable to found IssueTableViewCell for open state.")
+            }
+            cell = issueCell
+        }
+        
+        cell.title.text = issue.title
+        cell.number.text = "#\(issue.number)"
+        
+        return cell
+    }
 }

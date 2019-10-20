@@ -24,26 +24,27 @@ struct Injector {
     }
     
     private static func injectIssuesViewController(at container: Container) {
-        Injector.inject(IssuesViewController.self, fromStoryboardNamed: "Issues", at: container)
+        Injector.inject(fromStoryboardNamed: "Issues", at: container) { (controller: IssuesViewController) in
+            // Dependencies go here
+        }
     }
     
     private static func injectLoginViewController(at container: Container) {
-        Injector.inject(LoginViewController.self, fromStoryboardNamed: "Login", at: container) { controller in
+        Injector.inject(fromStoryboardNamed: "Login", at: container) { (controller: LoginViewController) in
             controller.login = container.resolve(Login.self)
         }
     }
     
-    private static func inject<Controller: UIViewController>(_ controller: Controller.Type, fromStoryboardNamed storyboard: String, at container: Container, beforeRegistering: ((Controller) -> Void)? = nil) {
-        container.register(controller.self) { resolver in
+    private static func inject<Controller: UIViewController>(fromStoryboardNamed storyboard: String, at container: Container, beforeRegistering: ((Controller) -> Void)? = nil) {
+        container.register(Controller.self) { resolver in
             let storyboard = UIStoryboard(name: storyboard, bundle: nil)
             guard let initial = storyboard.instantiateInitialViewController() else {
                 fatalError(K.Error.Message.withoutInitialController)
             }
             guard let concreteController = initial as? Controller else {
-                fatalError(K.Error.Message.initialViewControllerMustBeOfType(LoginViewController.self))
+                fatalError(K.Error.Message.initialViewControllerMustBeOfType(Controller.self))
             }
             
-            concreteController.modalPresentationStyle = .fullScreen
             beforeRegistering?(concreteController)
             return concreteController
         }
