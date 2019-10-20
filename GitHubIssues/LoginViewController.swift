@@ -47,7 +47,6 @@ class LoginViewController: UIViewController {
         }
         let navigation = UINavigationController(rootViewController: issuesController)
         navigation.modalPresentationStyle = .fullScreen
-        navigation.navigationBar.prefersLargeTitles = true
         self.present(navigation, animated: animated, completion: nil)
     }
     

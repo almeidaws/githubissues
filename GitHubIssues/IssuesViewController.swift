@@ -16,15 +16,31 @@ class IssuesViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.configureNavigationControllerIfPresent()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.resquestSwiftIssues()
+        self.requestSwiftIssues()
     }
     
-    private func resquestSwiftIssues() {
+    private func configureNavigationControllerIfPresent() {
+        // Large title
+        self.navigationController?.navigationBar.prefersLargeTitles = true
+    
+        // Refresh control
+        self.refreshControl = UIRefreshControl()
+        self.refreshControl?.addTarget(self, action: #selector(handleRefreshControl), for: .valueChanged)
+    }
+    
+    @objc private func handleRefreshControl() {
+        self.requestSwiftIssues()
+    }
+    
+    private func requestSwiftIssues(completion: (() -> Void)? = nil) {
+        self.refreshControl?.beginRefreshing()
         self.provider.request(.allIssues(owner: "apple", repo: "swift")) { (result) in
+            self.refreshControl?.endRefreshing()
             switch result {
             case .success(let moyaResponse):
                 do {
@@ -32,6 +48,7 @@ class IssuesViewController: UITableViewController {
                         .filter { $0.state != .all }
                         .sorted { $0.number > $1.number }
                     self.tableView.reloadData()
+                    completion?()
                 } catch {
                     self.alert(error)
                 }
