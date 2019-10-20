@@ -179,13 +179,13 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		EC03E641235B969D00E6444A /* Metadata */ = {
+		EC03E641235B969D00E6444A /* Property List Files */ = {
 			isa = PBXGroup;
 			children = (
 				EC0F4712235B8CDD00B1E60B /* GoogleService-Info.plist */,
 				EC0F46FE235B89AF00B1E60B /* Info.plist */,
 			);
-			name = Metadata;
+			name = "Property List Files";
 			sourceTree = "<group>";
 		};
 		EC03E642235B96B500E6444A /* Namespaces */ = {
@@ -300,7 +300,7 @@
 				EC03E63D235B903500E6444A /* View Controllers */,
 				EC03E654235B9DBA00E6444A /* Extensions */,
 				EC03E642235B96B500E6444A /* Namespaces */,
-				EC03E641235B969D00E6444A /* Metadata */,
+				EC03E641235B969D00E6444A /* Property List Files */,
 				EC03E640235B968900E6444A /* Resources */,
 				EC0F46F0235B89AC00B1E60B /* AppDelegate.swift */,
 				EC0F46FB235B89AF00B1E60B /* LaunchScreen.storyboard */,
