@@ -72,6 +72,8 @@ Foi feito um forte uso desse paradigma na definição das entidades de modelo. E
 - Internacionalização e localização
 - Acessibilidade
 - Armazenamento dos dados para acesso offline
+- Barra de pesquisa
+- Filtragem da listagem
 
 # Author
 [Gustavo Almeida](http://github.com/almeidaws)
