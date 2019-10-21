@@ -17,7 +17,7 @@ Internamente, o aplicativo do MVC e do princípio [Separation of Concerns](https
 
 Desenvolvedores experientes sabem que resolver um problema é diferente de programar. Foi por esse motivo que resolvi inicialmente esboçar o aplicativo em papel, para assim que eu pudesse ficar mais confortável com o que seria codificado tendo uma visão holística do projeto.
 
-![Protitipação em papel](https://github.com/almeidaws/githubissues/blob/master/prototipo_papel.jpg?raw=true)
+![Prototipação em papel](https://github.com/almeidaws/githubissues/blob/master/prototipo_papel.jpg?raw=true)
 
 ## Prototipação com Adobe XD
 
