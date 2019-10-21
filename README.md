@@ -42,7 +42,7 @@ Apesar de que durante a execução desse projeto não houve a execução à risc
 ![Tarefas](https://github.com/almeidaws/githubissues/blob/master/tarefas.png?raw=true)
 
 # Programação
-## Programação orientada a objetos
+## Programação Orientada a Objeto
 Apesar do Swift ser uma linguagem híbrida, todo o ecossistema do iOS foi pensando de forma orientada primariamente a objetos, por isso, seu uso foi feito intensivamente seguindo os princípios SOLID, principalmente o Princípio da Responsabilidade Única.
 
 Porém, como os princípios são diretrizes e não leis, sua aplicação foi ponderada para evitar introduzir complexidade no projeto por excessos de abstrações.
@@ -61,10 +61,10 @@ private func setCreationDateLabel() {
 
 
 
-## Programação orientada a protocolos
+## Programação Orientada a Protocolo
 A programação orientada a protocolos materializou-se no uso extensivo de protocolos para definição de APIs e diminuição do acoplamento entre as entidades. Não houve grande oportunidade para o uso de recursos mais avançados como [Protocol Composition]([https://docs.swift.org/swift-book/LanguageGuide/Protocols.html#ID282](https://docs.swift.org/swift-book/LanguageGuide/Protocols.html#ID282)) ou [Protocol Extensions]([https://docs.swift.org/swift-book/LanguageGuide/Protocols.html#ID521](https://docs.swift.org/swift-book/LanguageGuide/Protocols.html#ID521)).
 
-## Programação orientada a valor
+## Programação Orientada a Valor
 Foi feito um forte uso desse paradigma na definição das entidades de modelo. Elas são *structs* para evitar que uma instância do modelo seja compartilhadas com outras instâncias, geralmente *view controllers*, diminuindo assim efeitos colaterais no programa e consequentemente evitando que bugs aconteçam, devido ao compartilhamento de estado.
 
 
