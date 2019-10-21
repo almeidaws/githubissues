@@ -1,53 +1,53 @@
 # GitHub Issues
 
-Este projeto construÌdo em trÍs dias tem por objetivo demonstrar conhecimentos na criaÁ„o de aplicativos para iOS. Ele utiliza boas pr·ticas da prÛpria programaÁ„o e tambÈm do ecossistema criado pela Apple, assim com InjeÁ„o de DependÍncia com [Swiftinject]([https://github.com/Swinject/Swinject](https://github.com/Swinject/Swinject)) e uma camada de abstraÁ„o sobre as requisiÁıes de internet por meio do [Moya]([https://github.com/Moya/Moya](https://github.com/Moya/Moya)).
+Este projeto constru√≠do em tr√™s dias tem por objetivo demonstrar conhecimentos na cria√ß√£o de aplicativos para iOS. Ele utiliza boas pr√°ticas da pr√≥pria programa√ß√£o e tamb√©m do ecossistema criado pela Apple, assim com Inje√ß√£o de Depend√™ncia com [Swiftinject](https://github.com/Swinject/Swinject) e uma camada de abstra√ß√£o sobre as requisi√ß√µes de internet por meio do [Moya](https://github.com/Moya/Moya).
 
-A aplicativo consiste em apresentar as issues do [repositÛrio do Swift da Apple]([https://github.com/apple/swift](https://github.com/apple/swift)) e permitir que elas seja visualizadas com mais detalhes. Ele lista somente as 30 issues mais recentes.
+A aplicativo consiste em apresentar as issues do [reposit√≥rio do Swift da Apple](https://github.com/apple/swift) e permitir que elas seja visualizadas com mais detalhes. Ele lista somente as 30 issues mais recentes.
 
 # Arquitetura
-O aplicativo possui uma autenticaÁ„o com uma conta do GitHub implementada com [Firebase Authentication](https://firebase.google.com/docs/auth) e uma consulta na [API do GitHub](https://developer.github.com/v3/) para recuperaÁ„o das issues que s„o apresentadas.
+O aplicativo possui uma autentica√ß√£o com uma conta do GitHub implementada com [Firebase Authentication](https://firebase.google.com/docs/auth) e uma consulta na [API do GitHub](https://developer.github.com/v3/) para recupera√ß√£o das issues que s√£o apresentadas.
 
-Internamente, o aplicativo do MVC e do princÌpio [Separation of Concerns](https://en.wikipedia.org/wiki/Separation_of_concerns) para organizaÁ„o dos diretÛrios.
+Internamente, o aplicativo do MVC e do princ√≠pio [Separation of Concerns](https://en.wikipedia.org/wiki/Separation_of_concerns) para organiza√ß√£o dos diret√≥rios.
 
-![App Preview](https://bitbucket.org/recrutamento_jya_ios/recrutamento-ios-jya-almeidaws/raw/997835932d037d0ffa4e98107e38a09dd5503fbc/preview.gif)
+![App Preview](https://github.com/almeidaws/githubissues/blob/master/preview.gif?raw=true)
 
-# PrototipaÁ„o
+# Prototipa√ß√£o
 
-## PrototipaÁ„o em papel
+## Prototipa√ß√£o em papel
 
-Desenvolvedores experientes sabem que resolver um problema È diferente de programar. Foi por esse motivo que resolvi inicialmente esboÁar o aplicativo em papel, para assim que eu pudesse ficar mais confort·vel com o que seria codificado tendo uma vis„o holÌstica do projeto.
+Desenvolvedores experientes sabem que resolver um problema √© diferente de programar. Foi por esse motivo que resolvi inicialmente esbo√ßar o aplicativo em papel, para assim que eu pudesse ficar mais confort√°vel com o que seria codificado tendo uma vis√£o hol√≠stica do projeto.
 
-![ProtitipaÁ„o em papel](https://bitbucket.org/recrutamento_jya_ios/recrutamento-ios-jya-almeidaws/raw/997835932d037d0ffa4e98107e38a09dd5503fbc/prototipo_papel.jpg)
+![Protitipa√ß√£o em papel](https://github.com/almeidaws/githubissues/blob/master/prototipo_papel.jpg?raw=true)
 
-## PrototipaÁ„o com Adobe XD
+## Prototipa√ß√£o com Adobe XD
 
-ApÛs a etapa de prototipaÁ„o no papel, parti para um recurso que me permitisse entender o funcionamento da soluÁ„o com com um nÌvel maior de detalhes. Como o foco È na base do cÛdigo, n„o houve uma grande preocupaÁ„o com UI, porÈm ainda sim È possÌvel notar um cuidado pela aplicaÁ„o de conceitos de  UX.
+Ap√≥s a etapa de prototipa√ß√£o no papel, parti para um recurso que me permitisse entender o funcionamento da solu√ß√£o com com um n√≠vel maior de detalhes. Como o foco √© na base do c√≥digo, n√£o houve uma grande preocupa√ß√£o com UI, por√©m ainda sim √© poss√≠vel notar um cuidado pela aplica√ß√£o de conceitos de  UX.
 
-Note que as informaÁıes mais importantes como o tÌtulo da issue e a sua situaÁ„o atual, vari·vel entre aberto e fechado, s„o mais chamativas que informaÁıes secund·rias como a sua data de criaÁ„o ou seu n˙mero identificador.
+Note que as informa√ß√µes mais importantes como o t√≠tulo da issue e a sua situa√ß√£o atual, vari√°vel entre aberto e fechado, s√£o mais chamativas que informa√ß√µes secund√°rias como a sua data de cria√ß√£o ou seu n√∫mero identificador.
 
-![PrototipaÁ„o Adobe XD](https://bitbucket.org/recrutamento_jya_ios/recrutamento-ios-jya-almeidaws/raw/997835932d037d0ffa4e98107e38a09dd5503fbc/prototipo_adobe_xd.png)
+![Prototipa√ß√£o Adobe XD](https://github.com/almeidaws/githubissues/blob/master/prototipo_adobe_xd.png?raw=true)
 
-Apesar disso, ainda assim h· alguns problemas n„o solucionados como, por exemplo, o fato de como apresentar o tÌtulo grande de uma issue sem deixar a tela visualmente poluÌda.
+Apesar disso, ainda assim h√° alguns problemas n√£o solucionados como, por exemplo, o fato de como apresentar o t√≠tulo grande de uma issue sem deixar a tela visualmente polu√≠da.
 
 # Dificuldades
 
-Ao comeÁar esse projeto, eu nunca tinha usado o Swiftinject, apenas conhecia brevemente o mecanismo de InjeÁ„o de DependÍncia do [Vapor]([https://vapor.codes/](https://vapor.codes/)) utilizando a framework [Service]([https://docs.vapor.codes/3.0/service/getting-started/](https://docs.vapor.codes/3.0/service/getting-started/)). AlÈm disso, tambÈm nunca havia usando o [Moya]([https://github.com/Moya/Moya](https://github.com/Moya/Moya)).
+Ao come√ßar esse projeto, eu nunca tinha usado o Swiftinject, apenas conhecia brevemente o mecanismo de Inje√ß√£o de Depend√™ncia do [Vapor](https://vapor.codes) utilizando a framework [Service](https://docs.vapor.codes/3.0/service/getting-started). Al√©m disso, tamb√©m nunca havia usando o [Moya](https://github.com/Moya/Moya).
 
-Mesmo assim, a falta desse conhecimento n„o foi um obst·culo, apenas um contratempo. Utilizando o [CBL]([https://www.challengebasedlearning.org/](https://www.challengebasedlearning.org/)) pude estud·-las e aplic·-las efetivamente no projeto. Certamente n„o È a melhor implementaÁ„o, mas com certeza as boas pr·ticas foram seguidas.
+Mesmo assim, a falta desse conhecimento n√£o foi um obst√°culo, apenas um contratempo. Utilizando o [CBL]([https://www.challengebasedlearning.org/](https://www.challengebasedlearning.org/)) pude estud√°-las e aplic√°-las efetivamente no projeto. Certamente n√£o √© a melhor implementa√ß√£o, mas com certeza as boas pr√°ticas foram seguidas.
 
 # Scrum
 
-Apesar de que durante a execuÁ„o desse projeto n„o houve a execuÁ„o ‡ risca dos rituais do Scrum, fiz quest„o de utilizar essa framework na *medida certa*, tomando notas das coisas que precisariam serem feitas. Isso me ajudou a manter a vis„o macro do projeto e me orientar durante o seu desenvolvimento.
+Apesar de que durante a execu√ß√£o desse projeto n√£o houve a execu√ß√£o √† risca dos rituais do Scrum, fiz quest√£o de utilizar essa framework na *medida certa*, tomando notas das coisas que precisariam serem feitas. Isso me ajudou a manter a vis√£o macro do projeto e me orientar durante o seu desenvolvimento.
 
-![Tarefas](https://bitbucket.org/recrutamento_jya_ios/recrutamento-ios-jya-almeidaws/raw/9a5c0cc9f4a90021a6dfeaa5d52bc750ffeb584d/tarefas.png)
+![Tarefas](https://github.com/almeidaws/githubissues/blob/master/tarefas.png?raw=true)
 
-# ProgramaÁ„o
-## ProgramaÁ„o orientada a objetos
-Apesar do Swift ser uma linguagem hÌbrida, todo o ecossistema do iOS foi pensando de forma orientada primariamente a objetos, por isso, seu uso foi feito intensivamente seguindo os princÌpios SOLID, principalmente o PrincÌpio da Responsabilidade ⁄nica.
+# Programa√ß√£o
+## Programa√ß√£o orientada a objetos
+Apesar do Swift ser uma linguagem h√≠brida, todo o ecossistema do iOS foi pensando de forma orientada primariamente a objetos, por isso, seu uso foi feito intensivamente seguindo os princ√≠pios SOLID, principalmente o Princ√≠pio da Responsabilidade √önica.
 
-PorÈm, como os princÌpios s„o diretrizes e n„o leis, sua aplicaÁ„o foi ponderada para evitar introduzir complexidade no projeto por excessos de abstraÁıes.
+Por√©m, como os princ√≠pios s√£o diretrizes e n√£o leis, sua aplica√ß√£o foi ponderada para evitar introduzir complexidade no projeto por excessos de abstra√ß√µes.
 
-Este È o exemplo de cÛdigo que poderia ser generalizado, mas n„o foi para evitar *OtimizaÁ„o Prematura*.
+Este √© o exemplo de c√≥digo que poderia ser generalizado, mas n√£o foi para evitar *Otimiza√ß√£o Prematura*.
 ```swift
 private func setCreationDateLabel() {
     guard let issue = self.controller?.issue else { return }
@@ -61,17 +61,17 @@ private func setCreationDateLabel() {
 
 
 
-## ProgramaÁ„o orientada a protocolos
-A programaÁ„o orientada a protocolos materializou-se no uso extensivo de protocolos para definiÁ„o de APIs e diminuiÁ„o do acoplamento entre as entidades. N„o houve grande oportunidade para o uso de recursos mais avanÁados como [Protocol Composition]([https://docs.swift.org/swift-book/LanguageGuide/Protocols.html#ID282](https://docs.swift.org/swift-book/LanguageGuide/Protocols.html#ID282)) ou [Protocol Extensions]([https://docs.swift.org/swift-book/LanguageGuide/Protocols.html#ID521](https://docs.swift.org/swift-book/LanguageGuide/Protocols.html#ID521)).
+## Programa√ß√£o orientada a protocolos
+A programa√ß√£o orientada a protocolos materializou-se no uso extensivo de protocolos para defini√ß√£o de APIs e diminui√ß√£o do acoplamento entre as entidades. N√£o houve grande oportunidade para o uso de recursos mais avan√ßados como [Protocol Composition]([https://docs.swift.org/swift-book/LanguageGuide/Protocols.html#ID282](https://docs.swift.org/swift-book/LanguageGuide/Protocols.html#ID282)) ou [Protocol Extensions]([https://docs.swift.org/swift-book/LanguageGuide/Protocols.html#ID521](https://docs.swift.org/swift-book/LanguageGuide/Protocols.html#ID521)).
 
-## ProgramaÁ„o orientada a valor
-Foi feito um forte uso desse paradigma na definiÁ„o das entidades de modelo. Elas s„o *structs* para evitar que uma inst‚ncia do modelo seja compartilhadas com outras inst‚ncias, geralmente *view controllers*, diminuindo assim efeitos colaterais no programa e consequentemente evitando que bugs aconteÁam, devido ao compartilhamento de estado.
+## Programa√ß√£o orientada a valor
+Foi feito um forte uso desse paradigma na defini√ß√£o das entidades de modelo. Elas s√£o *structs* para evitar que uma inst√¢ncia do modelo seja compartilhadas com outras inst√¢ncias, geralmente *view controllers*, diminuindo assim efeitos colaterais no programa e consequentemente evitando que bugs aconte√ßam, devido ao compartilhamento de estado.
 
 
-# PossÌveis melhorias
-- InternacionalizaÁ„o e localizaÁ„o
+# Poss√≠veis melhorias
+- Internacionaliza√ß√£o e localiza√ß√£o
 - Acessibilidade
 - Armazenamento dos dados para acesso offline
 
 # Author
-[Gustavo Almeida]([http://github.com/almeidaws](http://github.com/almeidaws))
+[Gustavo Almeida](http://github.com/almeidaws)
