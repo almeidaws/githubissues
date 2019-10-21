@@ -33,7 +33,7 @@ Apesar disso, ainda assim há alguns problemas não solucionados como, por exemp
 
 Ao começar esse projeto, eu nunca tinha usado o Swinject, apenas conhecia brevemente o mecanismo de Injeção de Dependência do [Vapor](https://vapor.codes) utilizando a framework [Service](https://docs.vapor.codes/3.0/service/getting-started). Além disso, também nunca havia usando o [Moya](https://github.com/Moya/Moya).
 
-Mesmo assim, a falta desse conhecimento não foi um obstáculo, apenas um contratempo. Utilizando o [CBL]([https://www.challengebasedlearning.org/](https://www.challengebasedlearning.org/)) pude estudá-las e aplicá-las efetivamente no projeto. Certamente não é a melhor implementação, mas com certeza as boas práticas foram seguidas.
+Mesmo assim, a falta desse conhecimento não foi um obstáculo, apenas um contratempo. Utilizando o [CBL](https://www.challengebasedlearning.org/) pude estudá-las e aplicá-las efetivamente no projeto. Certamente não é a melhor implementação, mas com certeza as boas práticas foram seguidas.
 
 # Scrum
 
@@ -62,7 +62,7 @@ private func setCreationDateLabel() {
 
 
 ## Programação Orientada a Protocolo
-A programação orientada a protocolos materializou-se no uso extensivo de protocolos para definição de APIs e diminuição do acoplamento entre as entidades. Não houve grande oportunidade para o uso de recursos mais avançados como [Protocol Composition]([https://docs.swift.org/swift-book/LanguageGuide/Protocols.html#ID282](https://docs.swift.org/swift-book/LanguageGuide/Protocols.html#ID282)) ou [Protocol Extensions]([https://docs.swift.org/swift-book/LanguageGuide/Protocols.html#ID521](https://docs.swift.org/swift-book/LanguageGuide/Protocols.html#ID521)).
+A programação orientada a protocolos materializou-se no uso extensivo de protocolos para definição de APIs e diminuição do acoplamento entre as entidades. Não houve grande oportunidade para o uso de recursos mais avançados como [Protocol Composition](https://docs.swift.org/swift-book/LanguageGuide/Protocols.html#ID282) ou [Protocol Extensions](https://docs.swift.org/swift-book/LanguageGuide/Protocols.html#ID521).
 
 ## Programação Orientada a Valor
 Foi feito um forte uso desse paradigma na definição das entidades de modelo. Elas são *structs* para evitar que uma instância do modelo seja compartilhadas com outras instâncias, geralmente *view controllers*, diminuindo assim efeitos colaterais no programa e consequentemente evitando que bugs aconteçam, devido ao compartilhamento de estado.
