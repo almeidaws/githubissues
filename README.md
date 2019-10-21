@@ -47,7 +47,7 @@ Apesar do Swift ser uma linguagem híbrida, todo o ecossistema do iOS foi pensan
 
 Porém, como os princípios são diretrizes e não leis, sua aplicação foi ponderada para evitar introduzir complexidade no projeto por excessos de abstrações.
 
-Este é o exemplo de código que poderia ser generalizado, mas não foi para evitar *Otimização Prematura*.
+Este é um exemplo de código que poderia ser generalizado, mas não foi para evitar *Otimização Prematura*.
 ```swift
 private func setCreationDateLabel() {
     guard let issue = self.controller?.issue else { return }
