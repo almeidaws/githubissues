@@ -65,7 +65,7 @@ private func setCreationDateLabel() {
 A programação orientada a protocolos materializou-se no uso extensivo de protocolos para definição de APIs e diminuição do acoplamento entre as entidades. Não houve grande oportunidade para o uso de recursos mais avançados como [Protocol Composition](https://docs.swift.org/swift-book/LanguageGuide/Protocols.html#ID282) ou [Protocol Extensions](https://docs.swift.org/swift-book/LanguageGuide/Protocols.html#ID521).
 
 ## Programação Orientada a Valor
-Foi feito um forte uso desse paradigma na definição das entidades de modelo. Elas são *structs* para evitar que uma instância do modelo seja compartilhadas com outras instâncias, geralmente *view controllers*, diminuindo assim efeitos colaterais no programa e consequentemente evitando que bugs aconteçam, devido ao compartilhamento de estado.
+Foi feito um forte uso desse paradigma na definição das entidades de modelo. Elas são *structs* para evitar que uma instância do modelo seja compartilhada com outras instâncias, geralmente *view controllers*, diminuindo assim efeitos colaterais no programa e consequentemente evitando que bugs aconteçam, devido ao compartilhamento de estado.
 
 
 # Possíveis melhorias
