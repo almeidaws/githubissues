@@ -1,6 +1,6 @@
 # GitHub Issues
 
-Este projeto construído em três dias tem por objetivo demonstrar conhecimentos na criação de aplicativos para iOS. Ele utiliza boas práticas da própria programação e também do ecossistema criado pela Apple, assim com Injeção de Dependência com [Swiftinject](https://github.com/Swinject/Swinject) e uma camada de abstração sobre as requisições de internet por meio do [Moya](https://github.com/Moya/Moya).
+Este projeto construído em três dias tem por objetivo demonstrar conhecimentos na criação de aplicativos para iOS. Ele utiliza boas práticas da própria programação e também do ecossistema criado pela Apple, assim com Injeção de Dependência com [Swinject](https://github.com/Swinject/Swinject) e uma camada de abstração sobre as requisições de internet por meio do [Moya](https://github.com/Moya/Moya).
 
 A aplicativo consiste em apresentar as issues do [repositório do Swift da Apple](https://github.com/apple/swift) e permitir que elas seja visualizadas com mais detalhes. Ele lista somente as 30 issues mais recentes.
 
