@@ -10,7 +10,7 @@
         <!--Login View Controller-->
         <scene sceneID="0w8-xm-jAA">
             <objects>
-                <viewController id="GBm-4W-RSE" customClass="LoginViewController" customModule="GitHubIssues" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="GBm-4W-RSE" customClass="LoginViewController" customModule="GitHub_Issues" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Z71-G2-Abe">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -27,7 +27,7 @@
                                             <constraint firstAttribute="width" secondItem="ZfH-ov-PX0" secondAttribute="height" multiplier="60:59" id="iVx-sX-f2G"/>
                                         </constraints>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kfc-KN-ced" customClass="RoundedLoginButton" customModule="GitHubIssues" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kfc-KN-ced" customClass="RoundedLoginButton" customModule="GitHub_Issues" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="172" width="331" height="37"/>
                                         <color key="backgroundColor" red="0.090196078430000007" green="0.08235294118" blue="0.086274509799999996" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="23"/>
@@ -44,12 +44,20 @@
                                     <constraint firstItem="Kfc-KN-ced" firstAttribute="leading" secondItem="xIM-7Y-HgF" secondAttribute="leading" id="ml9-2l-BDc"/>
                                 </constraints>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Did you see the README?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fxl-Cn-zRG">
+                                <rect key="frame" x="107.5" y="608" width="199.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="xIM-7Y-HgF" firstAttribute="centerX" secondItem="Z71-G2-Abe" secondAttribute="centerX" id="4dR-TE-dox"/>
                             <constraint firstItem="xIM-7Y-HgF" firstAttribute="centerY" secondItem="Z71-G2-Abe" secondAttribute="centerY" id="Fbp-M5-bb3"/>
                             <constraint firstItem="CD3-mh-Kmw" firstAttribute="centerX" secondItem="Kfc-KN-ced" secondAttribute="centerX" id="Yb9-H1-jx5"/>
+                            <constraint firstItem="fxl-Cn-zRG" firstAttribute="top" secondItem="Kfc-KN-ced" secondAttribute="bottom" constant="55.5" id="Ytc-G8-0Ob"/>
+                            <constraint firstItem="fxl-Cn-zRG" firstAttribute="centerX" secondItem="Kfc-KN-ced" secondAttribute="centerX" id="bqi-bo-Rcd"/>
                             <constraint firstItem="CD3-mh-Kmw" firstAttribute="width" secondItem="Kfc-KN-ced" secondAttribute="height" multiplier="1:1" id="evv-Gb-ICj"/>
                             <constraint firstItem="CD3-mh-Kmw" firstAttribute="centerY" secondItem="Kfc-KN-ced" secondAttribute="centerY" id="fWH-64-EWX"/>
                             <constraint firstItem="CD3-mh-Kmw" firstAttribute="height" secondItem="Kfc-KN-ced" secondAttribute="height" id="lCQ-37-Tv8"/>

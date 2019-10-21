@@ -29,6 +29,7 @@
 		EC0F46FD235B89AF00B1E60B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC0F46FB235B89AF00B1E60B /* LaunchScreen.storyboard */; };
 		EC0F4713235B8CDD00B1E60B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EC0F4712235B8CDD00B1E60B /* GoogleService-Info.plist */; };
 		EC0F4715235B8D6E00B1E60B /* Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0F4714235B8D6E00B1E60B /* Firebase.swift */; };
+		EC16203E235D3B9700B6B497 /* IssuesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC16203D235D3B9700B6B497 /* IssuesTests.swift */; };
 		EC494A00235BD2DE000038AA /* GitHubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4949FF235BD2DE000038AA /* GitHubAPI.swift */; };
 		EC494A04235BD432000038AA /* IssuesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC494A03235BD432000038AA /* IssuesViewController.swift */; };
 		EC494A06235BD5BE000038AA /* Issues.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC494A05235BD5BE000038AA /* Issues.storyboard */; };
@@ -99,6 +100,7 @@
 		EC0F4709235B89AF00B1E60B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC0F4712235B8CDD00B1E60B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EC0F4714235B8D6E00B1E60B /* Firebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Firebase.swift; sourceTree = "<group>"; };
+		EC16203D235D3B9700B6B497 /* IssuesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssuesTests.swift; sourceTree = "<group>"; };
 		EC4949FF235BD2DE000038AA /* GitHubAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubAPI.swift; sourceTree = "<group>"; };
 		EC494A03235BD432000038AA /* IssuesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssuesViewController.swift; sourceTree = "<group>"; };
 		EC494A05235BD5BE000038AA /* Issues.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Issues.storyboard; sourceTree = "<group>"; };
@@ -319,11 +321,20 @@
 		EC0F4706235B89AF00B1E60B /* GitHubIssuesTests */ = {
 			isa = PBXGroup;
 			children = (
+				EC16203A235D3B6F00B6B497 /* Network */,
 				ECAFB8D9235CA8F600571F65 /* AuthState */,
-				ECE7FD10235C9D32008E1511 /* Property Lists Files */,
 				ECE7FD0F235C9D21008E1511 /* Login */,
+				ECE7FD10235C9D32008E1511 /* Property Lists Files */,
 			);
 			path = GitHubIssuesTests;
+			sourceTree = "<group>";
+		};
+		EC16203A235D3B6F00B6B497 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				EC16203D235D3B9700B6B497 /* IssuesTests.swift */,
+			);
+			name = Network;
 			sourceTree = "<group>";
 		};
 		EC4949FC235BCC41000038AA /* Model */ = {
@@ -674,6 +685,7 @@
 				ECAFB8DB235CA90600571F65 /* AuthStateMock.swift in Sources */,
 				EC494A26235C6B5F000038AA /* MoyaProviderError.swift in Sources */,
 				ECAFB8DD235CAA5600571F65 /* AuthStateTests.swift in Sources */,
+				EC16203E235D3B9700B6B497 /* IssuesTests.swift in Sources */,
 				ECE7FD0C235C9BC6008E1511 /* LoginProviderMock.swift in Sources */,
 				ECE7FD06235C87BA008E1511 /* LoginTests.swift in Sources */,
 			);
