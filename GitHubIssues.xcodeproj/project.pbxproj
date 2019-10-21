@@ -27,7 +27,6 @@
 		EC0F46F1235B89AC00B1E60B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0F46F0235B89AC00B1E60B /* AppDelegate.swift */; };
 		EC0F46FA235B89AF00B1E60B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC0F46F9235B89AF00B1E60B /* Assets.xcassets */; };
 		EC0F46FD235B89AF00B1E60B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC0F46FB235B89AF00B1E60B /* LaunchScreen.storyboard */; };
-		EC0F4708235B89AF00B1E60B /* GitHubIssuesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0F4707235B89AF00B1E60B /* GitHubIssuesTests.swift */; };
 		EC0F4713235B8CDD00B1E60B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EC0F4712235B8CDD00B1E60B /* GoogleService-Info.plist */; };
 		EC0F4715235B8D6E00B1E60B /* Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0F4714235B8D6E00B1E60B /* Firebase.swift */; };
 		EC494A00235BD2DE000038AA /* GitHubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4949FF235BD2DE000038AA /* GitHubAPI.swift */; };
@@ -97,7 +96,6 @@
 		EC0F46FC235B89AF00B1E60B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC0F46FE235B89AF00B1E60B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC0F4703235B89AF00B1E60B /* GitHubIssuesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GitHubIssuesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EC0F4707235B89AF00B1E60B /* GitHubIssuesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubIssuesTests.swift; sourceTree = "<group>"; };
 		EC0F4709235B89AF00B1E60B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC0F4712235B8CDD00B1E60B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EC0F4714235B8D6E00B1E60B /* Firebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Firebase.swift; sourceTree = "<group>"; };
@@ -324,7 +322,6 @@
 				ECAFB8D9235CA8F600571F65 /* AuthState */,
 				ECE7FD10235C9D32008E1511 /* Property Lists Files */,
 				ECE7FD0F235C9D21008E1511 /* Login */,
-				EC0F4707235B89AF00B1E60B /* GitHubIssuesTests.swift */,
 			);
 			path = GitHubIssuesTests;
 			sourceTree = "<group>";
@@ -674,7 +671,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC0F4708235B89AF00B1E60B /* GitHubIssuesTests.swift in Sources */,
 				ECAFB8DB235CA90600571F65 /* AuthStateMock.swift in Sources */,
 				EC494A26235C6B5F000038AA /* MoyaProviderError.swift in Sources */,
 				ECAFB8DD235CAA5600571F65 /* AuthStateTests.swift in Sources */,
