@@ -34,14 +34,14 @@ struct Injector {
     private static func injectIssuesViewController(at container: Container) {
         Injector.inject(fromStoryboardNamed: "Issues", at: container) { (controller: IssuesViewController) in
             controller.login = container.resolve(Login.self)
-            controller.authState = container.resolve(AuthState.self)
+            controller.authState = container.resolve(FirebaseAuthState.self)
         }
     }
     
     private static func injectLoginViewController(at container: Container) {
         Injector.inject(fromStoryboardNamed: "Login", at: container) { (controller: LoginViewController) in
             controller.login = container.resolve(Login.self)
-            controller.authState = container.resolve(AuthState.self)
+            controller.authState = container.resolve(FirebaseAuthState.self)
         }
     }
     
@@ -62,7 +62,7 @@ struct Injector {
     }
     
     private static func injectAuthState(at container: Container) {
-        container.register(AuthState.self) { _ in AuthState() }
+        container.register(AuthState.self) { _ in FirebaseAuthState() }
     }
     
     private static func injectLogin(at container: Container) {

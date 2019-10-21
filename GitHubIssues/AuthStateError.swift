@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum AuthStateError: Error, LocalizedError, CustomStringConvertible, CustomDebugStringConvertible {
+enum AuthStateError: Error, LocalizedError, CustomStringConvertible, CustomDebugStringConvertible, Hashable {
     case firebase(Error)
     case login(LoginError)
     
@@ -28,5 +28,13 @@ enum AuthStateError: Error, LocalizedError, CustomStringConvertible, CustomDebug
         
     var debugDescription: String {
         return self.description
+    }
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(self.description)
+    }
+    
+    static func == (lhs: AuthStateError, rhs: AuthStateError) -> Bool {
+        return lhs.description == rhs.description
     }
 }
