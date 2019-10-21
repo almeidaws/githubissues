@@ -22,7 +22,7 @@ Note que as informações mais importantes como o título da issue e se ela está ab
 
 Apesar disso, há alguns problemas não solucionados como os títulos grandes das issues para serem vistos sucintamente no iPhone.
 
-# Dificuldades 
+# Dificuldades
 
 Ao começar esse projeto, eu nunca tinha usado o Swiftinject, apenas conhecia brevemente o mecanismo de Injeção de Dependência do [Vapor]([https://vapor.codes/](https://vapor.codes/)) utilizando a framework [Service]([https://docs.vapor.codes/3.0/service/getting-started/](https://docs.vapor.codes/3.0/service/getting-started/)). Além disso, também nunca havia usando o [Moya]([https://github.com/Moya/Moya](https://github.com/Moya/Moya)).
 
@@ -32,7 +32,7 @@ Mesmo assim, a falta desse conhecimento não foi um obstáculo, apenas um contrate
 
 Apesar de que durante a execução desse projeto não houve a execução à riscas dos rituais do Scrum, fiz questão de utilizar essa framework na medida certa, tomando notas das coisas que precisariam serem feitas. Isso me ajudou a manter a visão macro do projeto.
 
-## Foto
+![Tarefas]([https://bitbucket.org/recrutamento_jya_ios/recrutamento-ios-jya-almeidaws/raw/9a5c0cc9f4a90021a6dfeaa5d52bc750ffeb584d/tarefas.png](https://bitbucket.org/recrutamento_jya_ios/recrutamento-ios-jya-almeidaws/raw/9a5c0cc9f4a90021a6dfeaa5d52bc750ffeb584d/tarefas.png))
 
 # Programação
 ## Programação orientada a objetos
