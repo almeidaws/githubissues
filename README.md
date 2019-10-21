@@ -75,5 +75,5 @@ Foi feito um forte uso desse paradigma na definição das entidades de modelo. E
 - Barra de pesquisa
 - Filtragem da listagem
 
-# Author
+# Autor
 [Gustavo Almeida](http://github.com/almeidaws)
