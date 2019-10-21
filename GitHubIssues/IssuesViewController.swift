@@ -15,7 +15,7 @@ class IssuesViewController: UITableViewController {
     private lazy var interfaceController = IssuesInterfaceController(self)
     private lazy var delegateController = IssuesDelegateController(self)
     var login: Login?
-    var authState: FirebaseAuthState?
+    var authState: AuthState?
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)

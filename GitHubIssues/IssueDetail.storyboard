@@ -19,7 +19,7 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zk5-Gs-MD7">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="440"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LbH-hG-H5e">
                                                 <rect key="frame" x="16" y="25" width="382" height="134"/>
@@ -82,6 +82,7 @@ syntax-ide-test -code-completion because code
                                             <constraint firstItem="LbH-hG-H5e" firstAttribute="top" secondItem="Zk5-Gs-MD7" secondAttribute="top" constant="25" id="Q4o-2r-eV0"/>
                                             <constraint firstItem="RdX-w4-tgE" firstAttribute="leading" secondItem="Zk5-Gs-MD7" secondAttribute="leading" constant="16" id="RBd-2B-efD"/>
                                             <constraint firstAttribute="trailing" secondItem="RdX-w4-tgE" secondAttribute="trailing" constant="16" id="dCF-mV-VDq"/>
+                                            <constraint firstAttribute="bottom" relation="lessThanOrEqual" secondItem="RdX-w4-tgE" secondAttribute="bottom" constant="25" id="l9l-zO-aOf"/>
                                             <constraint firstItem="fUV-nD-ZJD" firstAttribute="centerY" secondItem="9XE-jY-dvS" secondAttribute="centerY" id="lfF-1Y-mJ9"/>
                                             <constraint firstItem="wBz-dd-fYb" firstAttribute="leading" secondItem="j4i-yq-oiy" secondAttribute="trailing" constant="6" id="m5m-SF-NLt"/>
                                             <constraint firstItem="RdX-w4-tgE" firstAttribute="top" secondItem="j4i-yq-oiy" secondAttribute="bottom" constant="53" id="mXq-qG-ZVQ"/>
