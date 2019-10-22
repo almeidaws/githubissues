@@ -31,7 +31,7 @@ Apesar disso, ainda assim há alguns problemas não solucionados como, por exemp
 
 # Dificuldades
 
-Ao começar esse projeto, eu nunca tinha usado o Swinject, apenas conhecia brevemente o mecanismo de Injeção de Dependência do [Vapor](https://vapor.codes) utilizando a framework [Service](https://docs.vapor.codes/3.0/service/getting-started). Além disso, também nunca havia usando o [Moya](https://github.com/Moya/Moya).
+Ao começar esse projeto, eu nunca tinha usado o Swinject, apenas conhecia brevemente o mecanismo de Injeção de Dependência do [Vapor](https://vapor.codes) utilizando a framework [Service](https://docs.vapor.codes/3.0/service/getting-started). Além disso, também nunca havia usado o [Moya](https://github.com/Moya/Moya).
 
 Mesmo assim, a falta desse conhecimento não foi um obstáculo, apenas um contratempo. Utilizando o [CBL](https://www.challengebasedlearning.org/) pude estudá-las e aplicá-las efetivamente no projeto. Certamente não é a melhor implementação, mas com certeza as boas práticas foram seguidas.
 
